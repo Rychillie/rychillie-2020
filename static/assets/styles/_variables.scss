@@ -1,0 +1,55 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+// Font Variables
+$montserrat: 'Montserrat', sans-serif;
+$lato: 'Lato', sans-serif;
+
+$break-small: 719px;
+
+// Colors
+$white:             #F8F8F8;
+$light:             #E2E8F0;
+$black:             #191919;
+$dark:              #232323;
+$graylight:         #8d8d8d;
+$red:               #FF5757;
+$bluelittle:        #718096;
+$bluedark:          #2D3748;
+
+@mixin box-sizing($box-model) {
+    -webkit-box-sizing: $box-model;
+    -moz-box-sizing: $box-model;
+    box-sizing: $box-model;
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin border-radius ( $value: 3px ) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+    // keeps background from busting out of border
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+}
