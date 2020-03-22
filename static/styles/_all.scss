@@ -1,0 +1,284 @@
+body, html {
+  font-family: $nunito;
+  background-color: $white;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+
+  a {
+    color: $dark;
+
+    &:hover, &:active {
+      color: $bluedark;
+    }
+  }
+}
+
+header {
+  .top-menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: hsla(0, 0%, 97%, 0.8);
+    @include backdrop-filter(blur(10px));
+
+    nav {
+      padding: 20px 0;
+
+      a {
+        text-align: left;
+        display: block;
+        position: relative;
+
+        h1 {
+          color: $bluedark;
+          font-family: $nunito;
+          display: inline-block;
+          visibility: visible;
+          line-height: 44px;
+          font-size: 40px;
+          font-weight: 700;
+          padding: 0;
+          margin: 0;
+          opacity: 1;
+
+          span {
+            display: inline-block;
+            visibility: hidden;
+            line-height: 0;
+            font-size: 0;
+            opacity: 0;
+            @include transition(all .3s ease-in-out);
+          }
+
+          @media only screen and (min-width: 45em) {
+            span {
+              visibility: visible;
+              font-size: 40px;
+              line-height: 44px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .menu-list {
+        position: relative;
+
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          li {
+            margin: 0 5px;
+
+            a {
+              position: relative;
+              display: block;
+              padding: 10px 15px;
+              font-family: $nunito;
+              color: $bluelittle;
+              font-weight: 700;
+              line-height: 24px;
+              font-size: 24px;
+              @include transition(all .3s ease-in-out);
+
+              &:hover, &:active, &.active {
+                color: $red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .apresentation {
+    margin-top: 170px;
+
+    .image {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      overflow: hidden;
+      max-width: 300px;
+      @include border-radius(100%);
+      @include box-shadow(0 0px 15px 0px rgba(0, 0, 0, 0.2), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
+
+      .gatsby-image-wrapper {
+        max-width: 100%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .bio {
+      position: relative;
+      display: block;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        color: $bluedark;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        font-family: $montserrat;
+        position: relative;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+
+        small {
+          margin: 0;
+          color: $bluelittle;
+          font-family: $montserrat;
+          position: relative;
+          font-weight: 700;
+          line-height: 18px;
+          font-size: 14px;
+          display: block;
+          width: 100%;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 26px;
+        color: $bluedark;
+        position: relative;
+        display: inline-block;
+        font-family: $montserrat;
+        z-index: 5;
+
+        a {
+          font-size: 20px;
+          line-height: 26px;
+          position: relative;
+          display: inline-block;
+          font-family: $montserrat;
+
+          &::before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            opacity: 4;
+            position: absolute;
+            background-color: $red;
+            z-index: -1;
+            display: block;
+            bottom: 2px;
+            left: 0px;
+            @include transition(all .2s ease-in-out);
+          }
+
+          &:hover {
+            &::before {
+              height: 13px;
+              background-color: $red;
+              opacity: .3;
+            }
+          }
+        }
+      }
+    }
+
+    .social {
+      margin-top: 20px;
+      position: relative;
+      display: block;
+
+      ul.social-list {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        li.social-item {
+          float: left;
+          margin-right: 5px;
+          position: relative;
+          display: block;
+          clear:both;
+
+          &:last-child {
+            margin-left: 0;
+          }
+
+          a {
+            display: block;
+            position: relative;
+            padding: .65rem .8rem;
+            min-width: 120px;
+            text-align: center;
+            @include border-radius(.5rem);
+
+            svg {
+              border: transparent;
+              color: 0 solid $white;
+              vertical-align: bottom;
+              display: inline-block;
+              margin-right: 3px;
+              line-height: 24px;
+              height: 24px;
+              width: 24px;
+            }
+
+            p {
+              vertical-align: bottom;
+              display: inline-block;
+              line-height: 24px;
+              font-size: 16px;
+            }
+
+            &.twitter {
+              background: rgba($color: $twitterblue, $alpha: 0.1);
+              color: $twitterblue;
+
+              svg {
+                fill: $twitterblue;
+                color: transparent;
+              }
+            }
+
+            &.instagram {
+              background: rgba($color: $black, $alpha: 0.1);
+              color: $black;
+
+              svg {
+                fill: transparent;
+                color: $black;
+              }
+            }
+
+            &.github {
+              background: rgba($color: $black, $alpha: 0.1);
+              color: $black;
+
+              svg {
+                fill: transparent;
+                color: $black;
+              }
+            }
+
+            &.youtube {
+              background: rgba($color: $red, $alpha: 0.1);
+              color: $red;
+
+              svg {
+                fill: transparent;
+                color: $red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
