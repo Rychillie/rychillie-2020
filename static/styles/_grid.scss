@@ -5,7 +5,6 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 850px;
-  padding: 0 1.5rem;
   @include box-sizing(border-box);
 }
 
@@ -193,6 +192,7 @@
 
   .container {
     width: 80%;
+    padding: 0 1.5rem;
   }
 }
 

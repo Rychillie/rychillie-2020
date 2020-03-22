@@ -38,12 +38,13 @@ header {
           font-family: $nunito;
           display: inline-block;
           visibility: visible;
-          line-height: 44px;
-          font-size: 40px;
+          line-height: 32px;
+          font-size: 32px;
           font-weight: 700;
           padding: 0;
           margin: 0;
           opacity: 1;
+          @include transition(all .3s ease-in-out);
 
           span {
             display: inline-block;
@@ -55,6 +56,9 @@ header {
           }
 
           @media only screen and (min-width: 45em) {
+            line-height: 44px;
+            font-size: 40px;
+
             span {
               visibility: visible;
               font-size: 40px;
@@ -79,13 +83,19 @@ header {
             a {
               position: relative;
               display: block;
-              padding: 10px 15px;
+              padding: 5px;
               font-family: $nunito;
               color: $bluelittle;
               font-weight: 700;
-              line-height: 24px;
-              font-size: 24px;
+              line-height: 22px;
+              font-size: 16px;
               @include transition(all .3s ease-in-out);
+
+              @media only screen and (min-width: 45em) {
+                padding: 10px 15px;
+                line-height: 24px;
+                font-size: 24px;
+              }
 
               &:hover, &:active, &.active {
                 color: $red;
@@ -209,22 +219,22 @@ header {
 
       li.social-item {
         float: left;
-        margin: 6px 8px 6px 0;
+        margin: 6px 5px;
         position: relative;
         display: block;
         clear:both;
-
-        &:last-child {
-          margin-left: 0;
-        }
 
         a {
           display: block;
           position: relative;
           padding: .65rem .8rem;
-          min-width: 120px;
+          min-width: 75px;
           text-align: center;
           @include border-radius(.5rem);
+
+          @media only screen and (min-width: 45em) {
+            min-width: 120px;
+          }
 
           svg {
             color: transparent;
@@ -232,16 +242,27 @@ header {
             vertical-align: bottom;
             display: inline-block;
             margin-right: 3px;
-            line-height: 24px;
-            height: 24px;
-            width: 24px;
+            line-height: 20px;
+            height: 20px;
+            width: 20px;
+
+            @media only screen and (min-width: 45em) {
+              line-height: 24px;
+              height: 24px;
+              width: 24px;
+            }
           }
 
           p {
             vertical-align: bottom;
             display: inline-block;
-            line-height: 24px;
-            font-size: 16px;
+            line-height: 20px;
+            font-size: 12px;
+
+            @media only screen and (min-width: 45em) {
+              line-height: 24px;
+              font-size: 16px;
+            }
           }
 
           &.twitter {

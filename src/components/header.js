@@ -7,11 +7,11 @@ const Layout = () => (
         <div className={"top-menu"}>
             <div className={"container"}>
                 <nav className={"row"}>
-                    <div className={"col-4-lm"}>
+                    <div className={"col-5 col-4-lm"}>
                         <Link to="/" title={"Rychillie"} className={"title"}><h1>R<span>ychillie</span></h1></Link>
                     </div>
 
-                    <div className={"col-8-lm menu-list"}>
+                    <div className={"col-7 col-8-lm menu-list"}>
                         <ul>
                             <li>
                                 <Link to="/artigos" title={"Portfolio"}>Portfolio</Link>
