@@ -119,8 +119,13 @@ header {
     }
 
     .bio {
+      text-align: center;
       position: relative;
       display: block;
+
+      @media only screen and (min-width: 45em) {
+        text-align: left;
+      }
 
       h2 {
         margin: 0;
@@ -203,9 +208,7 @@ header {
 
         li.social-item {
           float: left;
-          margin-top: 5px;
-          margin-right: 5px;
-          margin-bottom: 5px;
+          margin: 6px 8px 6px 0;
           position: relative;
           display: block;
           clear:both;
@@ -228,16 +231,16 @@ header {
               vertical-align: bottom;
               display: inline-block;
               margin-right: 3px;
-              line-height: 16px;
-              height: 16px;
-              width: 16px;
+              line-height: 24px;
+              height: 24px;
+              width: 24px;
             }
 
             p {
               vertical-align: bottom;
               display: inline-block;
-              line-height: 16px;
-              font-size: 12px;
+              line-height: 24px;
+              font-size: 16px;
             }
 
             &.twitter {
