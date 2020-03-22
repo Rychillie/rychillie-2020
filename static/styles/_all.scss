@@ -109,7 +109,11 @@ header {
 }
 
 .apresentation {
-  margin-top: 170px;
+  margin: 100px 0;
+
+  @media only screen and (min-width: 45em) {
+    margin: 170px 0;
+  }
 
   .image {
     width: 100%;
@@ -231,9 +235,26 @@ header {
           min-width: 75px;
           text-align: center;
           @include border-radius(.5rem);
+          @include transition(all .2s ease-in-out);
+          @include box-shadow(0 0px 5px 0px rgba(0, 0, 0, 0.08), 0 5px 2px 0px rgba(0, 0, 0, 0.02));
+
+          &:hover {
+            @include box-shadow(0 0px 10px 0px rgba(0, 0, 0, 0.1), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
+          }
 
           @media only screen and (min-width: 45em) {
             min-width: 120px;
+
+            svg {
+              line-height: 24px;
+              height: 24px;
+              width: 24px;
+            }
+
+            p {
+              line-height: 24px;
+              font-size: 16px;
+            }
           }
 
           svg {
@@ -245,12 +266,6 @@ header {
             line-height: 20px;
             height: 20px;
             width: 20px;
-
-            @media only screen and (min-width: 45em) {
-              line-height: 24px;
-              height: 24px;
-              width: 24px;
-            }
           }
 
           p {
@@ -258,11 +273,6 @@ header {
             display: inline-block;
             line-height: 20px;
             font-size: 12px;
-
-            @media only screen and (min-width: 45em) {
-              line-height: 24px;
-              font-size: 16px;
-            }
           }
 
           &.twitter {
