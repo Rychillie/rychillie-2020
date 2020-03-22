@@ -96,191 +96,191 @@ header {
       }
     }
   }
+}
 
-  .apresentation {
-    margin-top: 170px;
+.apresentation {
+  margin-top: 170px;
 
-    .image {
-      width: 100%;
-      display: block;
-      margin: 0 auto;
-      overflow: hidden;
-      max-width: 300px;
-      @include border-radius(100%);
-      @include box-shadow(0 0px 15px 0px rgba(0, 0, 0, 0.2), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
+  .image {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 300px;
+    @include border-radius(100%);
+    @include box-shadow(0 0px 15px 0px rgba(0, 0, 0, 0.2), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
 
-      .gatsby-image-wrapper {
+    .gatsby-image-wrapper {
+      max-width: 100%;
+
+      img {
         max-width: 100%;
-
-        img {
-          max-width: 100%;
-        }
       }
     }
+  }
 
-    .bio {
-      text-align: center;
+  .bio {
+    text-align: center;
+    position: relative;
+    display: block;
+
+    @media only screen and (min-width: 45em) {
+      text-align: left;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      color: $bluedark;
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 20px;
+      font-family: $montserrat;
       position: relative;
+      font-weight: 700;
       display: block;
+      width: 100%;
 
-      @media only screen and (min-width: 45em) {
-        text-align: left;
-      }
-
-      h2 {
+      small {
         margin: 0;
-        padding: 0;
-        color: $bluedark;
-        font-size: 28px;
-        line-height: 32px;
-        margin-bottom: 20px;
+        color: $bluelittle;
         font-family: $montserrat;
         position: relative;
         font-weight: 700;
+        line-height: 18px;
+        font-size: 14px;
         display: block;
         width: 100%;
-
-        small {
-          margin: 0;
-          color: $bluelittle;
-          font-family: $montserrat;
-          position: relative;
-          font-weight: 700;
-          line-height: 18px;
-          font-size: 14px;
-          display: block;
-          width: 100%;
-        }
       }
+    }
 
-      p {
+    p {
+      font-size: 20px;
+      line-height: 26px;
+      color: $bluedark;
+      position: relative;
+      display: inline-block;
+      font-family: $montserrat;
+      z-index: 5;
+
+      a {
         font-size: 20px;
         line-height: 26px;
-        color: $bluedark;
         position: relative;
         display: inline-block;
         font-family: $montserrat;
-        z-index: 5;
 
-        a {
-          font-size: 20px;
-          line-height: 26px;
-          position: relative;
-          display: inline-block;
-          font-family: $montserrat;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          opacity: 4;
+          position: absolute;
+          background-color: $red;
+          z-index: -1;
+          display: block;
+          bottom: 2px;
+          left: 0px;
+          @include transition(all .2s ease-in-out);
+        }
 
+        &:hover {
           &::before {
-            content: "";
-            width: 100%;
-            height: 2px;
-            opacity: 4;
-            position: absolute;
+            height: 13px;
             background-color: $red;
-            z-index: -1;
-            display: block;
-            bottom: 2px;
-            left: 0px;
-            @include transition(all .2s ease-in-out);
-          }
-
-          &:hover {
-            &::before {
-              height: 13px;
-              background-color: $red;
-              opacity: .3;
-            }
+            opacity: .3;
           }
         }
       }
     }
+  }
 
-    .social {
-      margin-top: 20px;
+  .social {
+    margin-top: 20px;
+    position: relative;
+    display: block;
+
+    ul.social-list {
+      display: flex;
       position: relative;
-      display: block;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
 
-      ul.social-list {
-        display: flex;
+      li.social-item {
+        float: left;
+        margin: 6px 8px 6px 0;
         position: relative;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        display: block;
+        clear:both;
 
-        li.social-item {
-          float: left;
-          margin: 6px 8px 6px 0;
-          position: relative;
+        &:last-child {
+          margin-left: 0;
+        }
+
+        a {
           display: block;
-          clear:both;
+          position: relative;
+          padding: .65rem .8rem;
+          min-width: 120px;
+          text-align: center;
+          @include border-radius(.5rem);
 
-          &:last-child {
-            margin-left: 0;
+          svg {
+            color: transparent;
+            border: 0 solid $white;
+            vertical-align: bottom;
+            display: inline-block;
+            margin-right: 3px;
+            line-height: 24px;
+            height: 24px;
+            width: 24px;
           }
 
-          a {
-            display: block;
-            position: relative;
-            padding: .65rem .8rem;
-            min-width: 120px;
-            text-align: center;
-            @include border-radius(.5rem);
+          p {
+            vertical-align: bottom;
+            display: inline-block;
+            line-height: 24px;
+            font-size: 16px;
+          }
+
+          &.twitter {
+            background: rgba($color: $twitterblue, $alpha: 0.1);
+            color: $twitterblue;
 
             svg {
+              fill: $twitterblue;
               color: transparent;
-              border: 0 solid $white;
-              vertical-align: bottom;
-              display: inline-block;
-              margin-right: 3px;
-              line-height: 24px;
-              height: 24px;
-              width: 24px;
             }
+          }
 
-            p {
-              vertical-align: bottom;
-              display: inline-block;
-              line-height: 24px;
-              font-size: 16px;
-            }
+          &.instagram {
+            background: rgba($color: $black, $alpha: 0.1);
+            color: $black;
 
-            &.twitter {
-              background: rgba($color: $twitterblue, $alpha: 0.1);
-              color: $twitterblue;
-
-              svg {
-                fill: $twitterblue;
-                color: transparent;
-              }
-            }
-
-            &.instagram {
-              background: rgba($color: $black, $alpha: 0.1);
+            svg {
+              fill: transparent;
               color: $black;
-
-              svg {
-                fill: transparent;
-                color: $black;
-              }
             }
+          }
 
-            &.github {
-              background: rgba($color: $black, $alpha: 0.1);
+          &.github {
+            background: rgba($color: $black, $alpha: 0.1);
+            color: $black;
+
+            svg {
+              fill: transparent;
               color: $black;
-
-              svg {
-                fill: transparent;
-                color: $black;
-              }
             }
+          }
 
-            &.youtube {
-              background: rgba($color: $red, $alpha: 0.1);
+          &.youtube {
+            background: rgba($color: $red, $alpha: 0.1);
+            color: $red;
+
+            svg {
+              fill: transparent;
               color: $red;
-
-              svg {
-                fill: transparent;
-                color: $red;
-              }
             }
           }
         }
