@@ -199,10 +199,13 @@ header {
         position: relative;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
 
         li.social-item {
           float: left;
+          margin-top: 5px;
           margin-right: 5px;
+          margin-bottom: 5px;
           position: relative;
           display: block;
           clear:both;
@@ -220,21 +223,21 @@ header {
             @include border-radius(.5rem);
 
             svg {
-              border: transparent;
-              color: 0 solid $white;
+              color: transparent;
+              border: 0 solid $white;
               vertical-align: bottom;
               display: inline-block;
               margin-right: 3px;
-              line-height: 24px;
-              height: 24px;
-              width: 24px;
+              line-height: 16px;
+              height: 16px;
+              width: 16px;
             }
 
             p {
               vertical-align: bottom;
               display: inline-block;
-              line-height: 24px;
-              font-size: 16px;
+              line-height: 16px;
+              font-size: 12px;
             }
 
             &.twitter {
