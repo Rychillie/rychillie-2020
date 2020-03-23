@@ -1,8 +1,7 @@
 ---
 layout: post
 date: '2019-06-17 20:00:00'
-thumb: /images/test.png
-image: /images/vscode-minhas-extesoes-mais-dicas.webp
+image: /images/vscode-minhas-extesoes-mais-dicas.png
 title: VSCode Minhas Extensões + Dicas
 description: Algumas dicas de Plugins/Extensões para VSCode
 introduction: Algumas dicas de Plugins/Extensões para VSCode

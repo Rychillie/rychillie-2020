@@ -13,8 +13,8 @@ const IndexPage = ({data}) => {
             <div className={"imgpost"}>
               <div className={"imagepost"}>
                 <Img
-                  fluid={node.frontmatter.image.childImageSharp.fluid}
                   alt={node.frontmatter.title}
+                  fluid={node.frontmatter.image.childImageSharp.fluid}
                 />
               </div>
             </div>
@@ -31,32 +31,30 @@ const IndexPage = ({data}) => {
 }
 
 export const pageQuery = graphql`{
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
-      edges {
-        node {
-          id
-          frontmatter {
-            id: title
-            title
-            categories
-            thumb {
-              childImageSharp {
-                fluid(maxWidth: 360) {
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 10) {
+    edges {
+      node {
+        id
+        frontmatter {
+          id: title
+          title
+          categories
+          image {
+            childImageSharp {
+              fluid(maxWidth: 360) {
                 ...GatsbyImageSharpFluid
-                }
               }
             }
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
           }
-          fields {
-            slug
-          }
-          html
-          timeToRead
+          date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+        }
+        fields {
+          slug
         }
       }
     }
   }
+}
 `
 
 export default IndexPage

@@ -23,6 +23,7 @@
     "gatsby-plugin-offline": "^3.1.0",
     "gatsby-plugin-sass": "^2.2.0",
     "gatsby-plugin-sharp": "^2.5.1",
+    "gatsby-plugin-transition-link": "^1.18.0",
     "gatsby-remark-copy-linked-files": "^2.2.0",
     "gatsby-remark-images": "^3.2.0",
     "gatsby-remark-relative-images": "^0.3.0",

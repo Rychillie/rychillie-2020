@@ -21,14 +21,13 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
       frontmatter {
         id: title
         title
         categories
         image {
           childImageSharp {
-            fluid(maxWidth: 1280) {
+            fluid(maxWidth: 850) {
             ...GatsbyImageSharpFluid
             }
           }

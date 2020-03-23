@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Rychillie/rychillie
+  repo: Rychillie/rychillie.net
 
 media_folder: static/images
 public_folder: /images
@@ -61,29 +61,3 @@ collections:
           required: true,
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: redirect # Used in routes, e.g. /admin/collections/portfolio
-    label: redirect # Used in the UI
-    folder: content/redirect # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template i.e. title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - {
-          label: 'Date',
-          name: 'date',
-          widget: 'datetime',
-          format: 'YYYY-MM-DD hh:mm:ss',
-        }
-      - { label: 'Post Image', name: 'image', widget: 'image' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Introduction', name: 'introduction', widget: 'string' }
-      - { label: 'link', name: 'link', widget: 'string' }
-      - { label: 'Twitter text', name: 'twitter_text', widget: 'string' }
-      - { label: 'Tags', name: 'tags', widget: 'list', default: [''] }
-      - {
-          label: 'Category',
-          name: 'categories',
-          widget: 'list',
-          required: true,
-        }

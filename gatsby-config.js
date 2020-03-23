@@ -6,45 +6,6 @@ module.exports = {
     siteUrl: `https://rychillie.net`
   },
   plugins: [
-    `gatsby-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/images`,
-        name: 'uploads',
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/images`,
-        name: `thumb`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/images`,
-        name: `images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog/`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/portfolio/`,
-        name: `portfolio`,
-      },
-    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -67,13 +28,44 @@ module.exports = {
           {
             resolve: `gatsby-plugin-netlify-cms-paths`,
             options: {
-              // Path to your Netlify CMS config file
               cmsConfig: `/static/admin/config.yml`
             }
           },
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/images`,
+        name: `image`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/images`,
+        name: 'uploads',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog/`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/portfolio/`,
+        name: `portfolio`,
+      },
+    },
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-transition-link`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -88,7 +80,6 @@ module.exports = {
         icon: `${__dirname}/static/images/unicorn.png`,
       },
     },
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -96,5 +87,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-  ]
+  ],
 }

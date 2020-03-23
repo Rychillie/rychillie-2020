@@ -1,7 +1,6 @@
 ---
 layout: portfolio
 date: '2018-01-08 22:00'
-thumb: /images/test.png
 image: /images/marcos-vinicius.webp
 title: WebSite Marcos Vinícius Design
 description: Site do parceiro comercial Marcos Vinicius Design
