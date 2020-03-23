@@ -9,8 +9,8 @@ const IndexPage = ({data}) => {
       <h3>Ultimas Publicações:</h3>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Link className={"post"} type={node.frontmatter.categories} key={node.id} to={node.fields.slug} title={node.frontmatter.title}>
-          <div className={"content"}>
-            <div className={"imgpost"}>
+          <div className={"row content"}>
+            <div className={"col-5 imgpost"}>
               <div className={"imagepost"}>
                 <Img
                   alt={node.frontmatter.title}
@@ -18,9 +18,9 @@ const IndexPage = ({data}) => {
                 />
               </div>
             </div>
-            <div className={"descrition"}>
-              <span className={"categorypost"}>{node.frontmatter.categories}</span>
+            <div className={"col-7 descrition"}>
               <h3 className={"titlepost"}>{node.frontmatter.title}</h3>
+              <span className={"categorypost"}>{node.frontmatter.categories}</span>
               <span className={"datepost"}>{node.frontmatter.date}</span>
             </div>
           </div>

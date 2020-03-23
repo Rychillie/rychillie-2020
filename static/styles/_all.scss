@@ -323,4 +323,32 @@ header {
 main {
   padding: 40px 0;
   background-color: $light;
+
+  a {
+    &.post {
+      display: block;
+      margin-bottom: 20px;
+      background-color: transparent;
+      @include border-radius(.5rem);
+
+      .content {
+        .imgpost {
+          .gatsby-image-wrapper {
+            @include transition(.6s cubic-bezier(.2,.88,.54,1.21));
+            @include box-shadow(0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 1px 5px -2px rgba(0, 0, 0, 0.1));
+            @include border-radius(.5rem);
+
+            &:hover {
+              @include box-shadow(0 3px 10px -3px rgba(0, 0, 0, 0.3), 0 1px 5px -2px rgba(0, 0, 0, 0.19));
+              @include transform(scale(1.03));
+            }
+          }
+        }
+
+        .descrition {
+
+        }
+      }
+    }
+  }
 }
