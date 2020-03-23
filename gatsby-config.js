@@ -6,6 +6,9 @@ module.exports = {
     siteUrl: `https://rychillie.net`
   },
   plugins: [
+    `gatsby-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -28,6 +31,7 @@ module.exports = {
           {
             resolve: `gatsby-plugin-netlify-cms-paths`,
             options: {
+              // Path to your Netlify CMS config file
               cmsConfig: `/static/admin/config.yml`
             }
           },
@@ -35,17 +39,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/static/images`,
-        name: `image`,
-      },
-    },
-    {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/images`,
         name: 'uploads',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/images`,
+        name: `images`,
       },
     },
     {
@@ -64,8 +69,6 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-transition-link`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,

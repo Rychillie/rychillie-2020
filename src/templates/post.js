@@ -9,8 +9,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <div className={"blogpost"}>
-        <h3 className={"titulo"}>{post.frontmatter.title}</h3>
         <Img fluid={post.frontmatter.image.childImageSharp.fluid} alt={post.frontmatter.title}/>
+        <h3 className={"titulo"}>{post.frontmatter.title}</h3>
         <p className={"categorydate"}>{post.frontmatter.categories} — {post.frontmatter.date}</p>
         <div className={"article"} dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
@@ -21,6 +21,7 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
       frontmatter {
         id: title
         title
@@ -34,7 +35,6 @@ export const query = graphql`
         }
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
       }
-      html
     }
   }
 `

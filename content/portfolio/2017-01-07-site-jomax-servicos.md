@@ -24,4 +24,4 @@ Uma Landing Page para seu projeto era o adequado, pois ali seria possível apres
 
 
 
-![Jomax Serviços - Landing Page Website](/images/screencapture-jomaxservicos-br-2020-01-15-11_56_26.png "Jomax Serviços - Landing Page Website")
+![Jomax Serviços - Landing Page Website](../images/screencapture-jomaxservicos-br-2020-01-15-11_56_26.png "Jomax Serviços - Landing Page Website")

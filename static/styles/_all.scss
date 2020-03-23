@@ -351,4 +351,88 @@ main {
       }
     }
   }
+
+  .blogpost {
+    .gatsby-image-wrapper {
+      @include border-radius(.65rem);
+    }
+
+    h3 {
+      &.titulo {
+        display: block;
+        position: relative;
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+
+    .categorydate {
+      display: block;
+      position: relative;
+      margin: 20px 0 15px;
+    }
+
+    .article {
+      display: block;
+      position: relative;
+
+      p {
+        display: block;
+        position: relative;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      img {
+        display: block;
+        position: relative;
+        max-width: 100%;
+        margin: 20px 0 15px;
+        @include border-radius(.5rem);
+      }
+
+      iframe {
+        display: block;
+        max-width: 560px;
+        max-height: 315px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      a {
+        font-size: 20px;
+        line-height: 26px;
+        position: relative;
+        display: inline-block;
+        font-family: $nunito;
+        color: $dark;
+        z-index: 5;
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          opacity: 4;
+          position: absolute;
+          background-color: $red;
+          z-index: -1;
+          display: block;
+          bottom: 2px;
+          left: 0px;
+          @include transition(all .2s ease-in-out);
+        }
+
+        &:hover {
+          color: $dark;
+
+          &::before {
+            height: 13px;
+            background-color: $red;
+            opacity: .3;
+          }
+        }
+      }
+    }
+  }
 }
