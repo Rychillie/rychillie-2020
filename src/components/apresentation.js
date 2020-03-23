@@ -30,7 +30,7 @@ export default () => {
                     <div className={"col-8"}>
                         <div className={"bio"}>
                             <h2><small>Olá, meu nome é</small>Rychillie Umpirre de Oliveira</h2>
-                            <p>Um jovem Programador Front-End querendo compartilhar seu conhecimento. Sempre buscando evoluir e melhorar em todos os aspectos. Venha <Link to={"/sobre"} alt={"Sobre"}>me Conhecer</Link> um pouco mais e o <Link to={"/portfolio"} alt={"Portfolio"}>meu trabalho</Link>.</p>
+                            <p>Um jovem Programador Front-End querendo compartilhar seu conhecimento. Sempre buscando evoluir e melhorar em todos os aspectos. <Link to={"/sobre"} alt={"Sobre"}>Conheça-me</Link> e um pouco mais do <Link to={"/portfolio"} alt={"Portfolio"}>meu trabalho</Link>.</p>
                         </div>
                     </div>
                     <div className={"col-12"}>

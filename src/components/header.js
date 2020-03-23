@@ -14,7 +14,7 @@ const Layout = () => (
                     <div className={"col-7 col-8-lm menu-list"}>
                         <ul>
                             <li>
-                                <Link to="/artigos" title={"Portfolio"}>Portfolio</Link>
+                                <Link to="/portfolio" title={"Portfolio"}>Portfolio</Link>
                             </li>
                             <li>
                                 <Link to="/sobre" title={"Sobre"}>Sobre</Link>
