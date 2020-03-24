@@ -73,6 +73,7 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-transition-link`,
+    'gatsby-plugin-react-helmet',
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
