@@ -359,6 +359,7 @@ main {
 
   .blogpost {
     .gatsby-image-wrapper {
+      max-height: 220px;
       @include border-radius(.65rem);
     }
 

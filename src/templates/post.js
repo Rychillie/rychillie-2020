@@ -2,12 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
+import SEO from '../components/SEO';
 
 export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
     <Layout>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt || 'nothin’'}
+        image={post.frontmatter.image.childImageSharp.fluid}
+        pathname={post.fields.slug}
+        article
+      />
       <div className={"blogpost"}>
         <Img fluid={post.frontmatter.image.childImageSharp.fluid} alt={post.frontmatter.title}/>
         <h3 className={"titulo"}>{post.frontmatter.title}</h3>
@@ -34,6 +42,9 @@ export const query = graphql`
           }
         }
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+      }
+      fields {
+        slug
       }
     }
   }

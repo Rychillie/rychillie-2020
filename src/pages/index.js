@@ -2,10 +2,14 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/home"
 import Img from "gatsby-image"
+import SEO from '../components/SEO';
 
 const IndexPage = ({data}) => {
   return (
     <Layout>
+      <SEO
+        title="Inicio"
+      />
       <h3>Ultimas Publicações:</h3>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Link className={"post"} type={node.frontmatter.categories} key={node.id} to={node.fields.slug} title={node.frontmatter.title}>
