@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Apresentation from "./apresentation"
 
 const Layout = () => (
     <header>
@@ -24,7 +23,6 @@ const Layout = () => (
                 </nav>
             </div>
         </div>
-        <Apresentation/>
     </header>
 )
 
