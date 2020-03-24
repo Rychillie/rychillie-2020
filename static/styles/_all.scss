@@ -307,11 +307,11 @@ header {
 
           &.youtube {
             background: rgba($color: $red, $alpha: 0.1);
-            color: $red;
+            color: $youtubered;
 
             svg {
               fill: transparent;
-              color: $red;
+              color: $youtubered;
             }
           }
         }

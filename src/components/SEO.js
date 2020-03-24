@@ -64,6 +64,7 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
+  lang: `pt-br`,
   title: null,
   description: null,
   image: null,
