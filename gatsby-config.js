@@ -10,6 +10,12 @@ module.exports = {
     twitterUsername: "@rychillie",
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'pt-br'
+      }
+    }
     `gatsby-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
