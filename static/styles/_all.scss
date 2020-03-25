@@ -124,14 +124,9 @@ header {
     display: block;
     margin: 0 auto;
     overflow: hidden;
-    max-width: 190px;
+    max-width: 210px;
     @include border-radius(100%);
     @include box-shadow(0 0px 15px 0px rgba(0, 0, 0, 0.2), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
-    @include transition(all .3s ease-in-out);
-
-    @media only screen and (min-width: 33.75em) {
-      max-width: 240px;
-    }
 
     @media only screen and (min-width: 45em) {
       max-width: 300px;
@@ -159,15 +154,14 @@ header {
       margin: 0;
       padding: 0;
       color: $bluedark;
-      font-size: 24px;
-      line-height: 26px;
-      margin-bottom: 10px;
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 20px;
       font-family: $nunito;
       position: relative;
       font-weight: 700;
       display: block;
       width: 100%;
-      @include transition(all .3s ease-in-out);
 
       small {
         margin: 0;
@@ -175,42 +169,28 @@ header {
         font-family: $nunito;
         position: relative;
         font-weight: 700;
-        line-height: 16px;
-        font-size: 12px;
+        line-height: 18px;
+        font-size: 14px;
         display: block;
         width: 100%;
-        @include transition(all .3s ease-in-out);
-      }
-
-      @media only screen and (min-width: 60em) {
-        font-size: 28px;
-        line-height: 32px;
-        margin-bottom: 20px;
-
-        small {
-          line-height: 18px;
-          font-size: 14px;
-        }
       }
     }
 
     p {
-      z-index: 5;
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 20px;
+      line-height: 26px;
       color: $bluedark;
       position: relative;
       display: inline-block;
       font-family: $nunito;
-      @include transition(all .3s ease-in-out);
+      z-index: 5;
 
       a {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 20px;
+        line-height: 26px;
         position: relative;
         display: inline-block;
         font-family: $nunito;
-        @include transition(all .3s ease-in-out);
 
         &::before {
           content: "";
@@ -231,22 +211,6 @@ header {
             height: 13px;
             background-color: $red;
             opacity: .3;
-          }
-        }
-      }
-
-      @media only screen and (min-width: 60em) {
-        font-size: 20px;
-        line-height: 26px;
-
-        a {
-          font-size: 20px;
-          line-height: 26px;
-
-          &:hover {
-            &::before {
-              height: 13px;
-            }
           }
         }
       }
