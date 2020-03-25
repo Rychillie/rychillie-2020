@@ -15,7 +15,7 @@ module.exports = {
       options: {
         lang: 'pt-br'
       }
-    }
+    },
     `gatsby-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
