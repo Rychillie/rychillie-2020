@@ -59,3 +59,7 @@ $youtubered:        #d40000;
 	-webkit-backdrop-filter: $backdrop-filter;
 	backdrop-filter: $backdrop-filter;
 }
+
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}

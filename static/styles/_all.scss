@@ -92,9 +92,13 @@ header {
               @include transition(all .3s ease-in-out);
 
               @media only screen and (min-width: 45em) {
-                padding: 10px 15px;
+                padding: 10px 5px;
                 line-height: 24px;
                 font-size: 24px;
+              }
+
+              @media only screen and (min-width: 60em) {
+                padding: 10px 15px;
               }
 
               &:hover, &:active, &.active {
@@ -120,9 +124,18 @@ header {
     display: block;
     margin: 0 auto;
     overflow: hidden;
-    max-width: 300px;
+    max-width: 190px;
     @include border-radius(100%);
     @include box-shadow(0 0px 15px 0px rgba(0, 0, 0, 0.2), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
+    @include transition(all .3s ease-in-out);
+
+    @media only screen and (min-width: 33.75em) {
+      max-width: 240px;
+    }
+
+    @media only screen and (min-width: 45em) {
+      max-width: 300px;
+    }
 
     .gatsby-image-wrapper {
       max-width: 100%;
@@ -146,14 +159,15 @@ header {
       margin: 0;
       padding: 0;
       color: $bluedark;
-      font-size: 28px;
-      line-height: 32px;
-      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 10px;
       font-family: $nunito;
       position: relative;
       font-weight: 700;
       display: block;
       width: 100%;
+      @include transition(all .3s ease-in-out);
 
       small {
         margin: 0;
@@ -161,28 +175,42 @@ header {
         font-family: $nunito;
         position: relative;
         font-weight: 700;
-        line-height: 18px;
-        font-size: 14px;
+        line-height: 16px;
+        font-size: 12px;
         display: block;
         width: 100%;
+        @include transition(all .3s ease-in-out);
+      }
+
+      @media only screen and (min-width: 60em) {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 20px;
+
+        small {
+          line-height: 18px;
+          font-size: 14px;
+        }
       }
     }
 
     p {
-      font-size: 20px;
-      line-height: 26px;
+      z-index: 5;
+      font-size: 16px;
+      line-height: 22px;
       color: $bluedark;
       position: relative;
       display: inline-block;
       font-family: $nunito;
-      z-index: 5;
+      @include transition(all .3s ease-in-out);
 
       a {
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 22px;
         position: relative;
         display: inline-block;
         font-family: $nunito;
+        @include transition(all .3s ease-in-out);
 
         &::before {
           content: "";
@@ -203,6 +231,22 @@ header {
             height: 13px;
             background-color: $red;
             opacity: .3;
+          }
+        }
+      }
+
+      @media only screen and (min-width: 60em) {
+        font-size: 20px;
+        line-height: 26px;
+
+        a {
+          font-size: 20px;
+          line-height: 26px;
+
+          &:hover {
+            &::before {
+              height: 13px;
+            }
           }
         }
       }
