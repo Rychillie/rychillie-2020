@@ -1,0 +1,82 @@
+---
+title: "Meu Top 5 Apps de 2016"
+layout: post
+date: 2016-12-27 23:00
+image: /assets/images/apps.jpg
+headerImage: false
+tag:
+- apps
+- top
+- opinião
+blog: true
+comments: true
+category: blog
+author: rychillie
+description: 5 apps que fizeram parte de mim este ano...
+---
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Anuncio Blog Rychillie -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7837358846130941"
+     data-ad-slot="9265933715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="https://pbs.twimg.com/profile_images/776855558578065408/lIYl1qqQ.jpg" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>5º Lugar: Pocket</h3>
+        <p>App que faço uso diariamente para salvar links e artigos no qual necessito ou gostaria de ler outro dia, sinceramente poderia ser meu primeiro colocado mas possui uns bugs e limitações que as vezes incomodam mas fora isso ele faz seu trabalho!</p>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="http://br.blog.trello.com/wp-content/uploads/2015/07/trello-logo-blue.png" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>4º Lugar: Trello</h3>
+        <p>Acho que um dos meus favoritos mas ainda não muito utilizado, uma ideia bem simples e prática para organização que merece sua posição!</p>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="http://www.clixmarketing.com/blog/wp-content/uploads/2016/06/635946503189638341-239880403_pinterest.jpg" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>3º Lugar: Pinterest</h3>
+        <p>Comecei a usar a pouco tempo e se tornou a minha rede social favorita… acho! Ela é muito boa quando preciso de uma inspiração ou alguma idéia, pois procuro algo que gosto e encontro diversas imagens que relacionam com aquela pesquisada.</p>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="http://www.meu-smartphone.com/wp-content/uploads/2015/09/Capa-Feedly.jpg" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>2º Lugar: Feedly</h3>
+        <p>Simplesmente o App que mais utilizei neste ano, perfeito para juntar todos sites que sigo ele sempre está comigo e a todo momento acesso para ter em primeira mão todas notícias referentes ao que mais gosto(tecnologia, games…), só não está em primeiro lugar pois seus bugs ainda são grandes referente a coleta de dados de sites, as vezes acredito que são os sites, mas já pude notar que é uma limitação do App.</p>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="https://lh6.ggpht.com/KItvb_F5fVTvQg3hWNc4idE_QBDjWgu5yDseSbb9fguTbGJGRvMbLEHqAZp-eKCSDA=w300" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>1º Lugar: Pocket Casts</h3>
+        <p>Não é meu App mas é o favorito, pois ele funciona perfeitamente, e sua ligação com a versão web é simples e prática, eu estaria louco se não tivesse colocado em primeiro lugar nesta lista!</p>
+    </div>
+</div>

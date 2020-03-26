@@ -14,7 +14,6 @@ tags:
   - studio
   - code
   - dicas
-  - ''
 categories:
   - Dicas
 ---

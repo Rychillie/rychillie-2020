@@ -1,0 +1,82 @@
+---
+title: "Meu Top 5 Jogos de 2016"
+layout: post
+date: 2016-12-29 23:00
+image: /assets/images/gameover.jpg
+headerImage: false
+tag:
+- jogos
+- top
+- opinião
+blog: true
+comments: true
+category: blog
+author: rychillie
+description: 5 jogos que fizeram parte de mim este ano...
+---
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Anuncio Blog Rychillie -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7837358846130941"
+     data-ad-slot="9265933715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="https://madewith.unity.com/sites/default/files/game/header-image/desktop/maxresdefault_0.jpg" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>5º Lugar: Keep Talking and Nobody Explodes</h3>
+        <p>Jogo independente criado para óculos de realidade virtual, no qual o nosso objetivo é desarmar uma bomba, o bacana do game é que uma pessoa vê a bomba e a outra vê os manuais assim tornando o game um pouco dificil se você não é muito comunicativo e expressivo!</p>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="https://lh3.googleusercontent.com/FFfoOgwIWDPBT1Hx52fyVWF-sKbcJzRl4yGH4XK5vV28L0pvPyKvt9pjq4zCIaI2l5g=h900" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>4º Lugar: Pocket Morty</h3>
+        <p>Jogo da Série de desenhos animados Rick and Morty o jogo é basicamente uma cópia dos clássicos Pokémons de Gameboy no qual ao invés de usar Pokemons você usa Mortys de outras dimensões.</p>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="http://ifanzine.com/wp-content/uploads/2014/02/Threes-7.png" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>3º Lugar: Threes</h3>
+        <p>Joguinho ao estilo 2048 no qual você joga com múltiplos de 3. Não se engane pois a sua trilha sonora e game design torna ele muito atrativo, e que não enjoa nem vicia tornando ele um ótimo jogo do estilo Puzzle.</p>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="https://2672686a4cf38e8c2458-2712e00ea34e3076747650c92426bbb5.ssl.cf1.rackcdn.com/2016-08-12-190630.jpeg" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>2º Lugar: Reigns</h3>
+        <p>Simplesmente o melhor jogo de RPG do ano, na minha humilde opinião, no qual você é um Rei amaldiçoado e tem que fazer escolhas que afetam não só a sua atual história, mas a seguinte e possivelmente a outra.</p>
+    </div>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="http://s2.glbimg.com/yFBniwoIH9cWCaFk0-L1BJg1BxY=/0x600/s.glbimg.com/po/tt2/f/original/2015/09/10/captura_de_tela_2015-09-10_as_11.39.26_1.png" alt="Alt Text">
+    </div>
+
+    <div class="toright">
+        <h3>1º Lugar: Pokemon GO</h3>
+        <p>Não tenho muito para falar do game, só dizer que sou fã da série e por isso ainda jogo Pokemon GO e continuarei por um bom tempo...</p>
+    </div>
+</div>

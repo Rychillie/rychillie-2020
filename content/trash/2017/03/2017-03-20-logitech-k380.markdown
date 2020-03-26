@@ -1,0 +1,40 @@
+---
+title: Review Logitech k380
+layout: post
+date: 2017-03-20 14:30
+image: "/assets/images/k380-multi-device-bluetooth-keyboard-01.jpg"
+tag:
+- review
+- teclado
+- bluetooth
+- logitech
+- k380
+blog: true
+comments: true
+author: rychillie
+category: blog
+description: o melhor teclado para quem busca produtividade
+---
+<img src="https://rychillie.github.io/assets/images/review/logitech/k380/k380-multi-device-bluetooth-keyboard-01.jpg">
+
+Depois é um ano usando ele acabei esquecendo de falar dele, estou tão acostumado com ele que ficou difícil de achar pontos fracos dele que é para mim o melhor teclado que já pude usar, comprei o dispositivo para suprir minha necessidade de um teclado sem fio para usar no desenvolvimento Web, que no caso veio a calhar com sua funcionalidade de 3 conexões sem fio, via bluetooth.
+
+O Logitech K380 é um teclado bem compacto e leve que funciona a pilhas e tem a possibilidade de se conectar com 3 dispositivos diferentes e trocá los com facilidade apertando uma tecla.
+
+<img src="https://rychillie.github.io/assets/images/review/logitech/k380/k380-multi-device-bluetooth-keyboard-02.jpg">
+
+A coisa que achei mais impressionante é sua gestão de energia, utilizando o computador por uma média de 6 horas diárias por um ano o teclado não gastou nem 15% das pilhas nele, o que é impressionante para um dispositivo Bluetooth. O que ocorre é que quando não está sendo usado ele entra em stand by e economiza horas de energia.
+
+Sua portabilidade é outro ponto forte, pois seu peso está praticamente nas pilhas fora isso ele é bem leve e com sua design fora do comum deixa um ar sofisticado na mesa, parecendo um produto premium.
+
+O teclado em si é bem confortável para digitação em longos períodos. Ele lembra muito um teclado de macbook com seu famoso “Mecanismo Borboleta”, além disso vale ressaltar que usei diversas vezes para jogar o um CS:GO ou outros jogos mais simples, mas foi em alguns momentos porque o teclado não é feito para isso, ele é feito para produtividade com suas 3 conexões.
+
+O único problema que tive com ele na verdade foi em meu computador antigo, acontecia que o bluetooth se desconectar e tinha que reiniciar de tempos em tempos sendo assim uma tarefa irritante em algumas ocasiões, ao trocar de computador vi que esse problema acabou fui pesquisar e vi que era a versão do meu bluetooth do computador que já estava ultrapassado.
+
+<img src="https://rychillie.github.io/assets/images/review/logitech/k380/k380-multi-device-bluetooth-keyboard-03.jpg">
+
+Pouco conhecido mas recomendo, sempre que necessário carrego comigo o meu teclado, e com certeza comprarei outro igual caso necessite de um, pois este foi simplesmente o melhor teclado que já pude usar, ele simplesmente foi feito para mim, e quem sabe não foi feito para você?!
+
+Além disso tudo ele pode se conectar com diversos dispositivos como PC, Mac, Chrome OS, Smart-TVs e Setup-box’s. Acredito que ele poderia ser melhor ainda se sua bateria fosse recarregável e não utilizasse pilhas, sendo assim seria possível recarregá lo com um cabo USB, que no meu caso eu usaria o mesmo cabo que fica em cima da minha escrivaninha que carrega o Mouse e meu Smartphone.
+
+Espero que tenham gostado deste meu primeiro review, em breve virão outros e se você pretende ou tem este produtos comente aí, não esqueça de deixar seu feedback, ele é muito importante para que eu continue a trazer conteúdos do tipo.

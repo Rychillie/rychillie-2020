@@ -1,0 +1,27 @@
+---
+title: "WHAFF - Melhor Aplicativo Para Ganhar Dinheiro No Android/IOS"
+layout: post
+date: 2017-06-01 18:00
+image: /assets/images/whaff-THUMBNAIL.png
+headerImage: false
+tag:
+- ganhar
+- dinheiro
+- smartphone
+- android
+- ios
+- whaff
+- dica
+- aplicativos
+blog: true
+comments: true
+author: rychillie
+category: blog
+description: Um aplicativo para ganhar dinheiro no smamrtphone
+---
+
+<p>Eu tenho certeza que você já pensou em ganhar dinheiro com através do seu smartphone. No video a seguir trago o Aplicativo <a href="http://whaff.com/">Whaff</a> disponível para <a href="https://goo.gl/8uoGC2">Android</a> e <a href="https://goo.gl/fUxKrp">IOS</a>, que da para você a possibilidade de ganhar dinheiro testando aplicativos e jogos.</p>
+
+<iframe width="560" height="310" src="https://www.youtube.com/embed/yvLBT3jzO9I" frameborder="0" allowfullscreen></iframe>
+
+<p>EAE, Gostou do video? Não se esqueça que é possivel começar ganharndo dinheiro utilizando o códiogo: "BJ63356" alem disso deixe seu Feedback, ele é muito importante para que possamos melhorar o conteúdo!</p>
