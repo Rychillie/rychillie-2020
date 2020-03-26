@@ -19,7 +19,7 @@ body, html {
         height: 40px;
         color: $white;
         display: block;
-        margin: 15px auto;
+        margin: 50px auto 20px;
         background: $bluedark;
         text-align: center;
         padding: 10px 20px;
@@ -533,6 +533,68 @@ main {
             background-color: $red;
             opacity: .3;
           }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 40px 0;
+
+  nav {
+    .menu-footer {
+      ul {
+        margin: 20px 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        @media only screen and (min-width: 45em) {
+          justify-content: flex-start;
+        }
+
+        li {
+          position: relative;
+          margin-left: 5px;
+          margin-right: 5px;
+
+          a {
+            font-size: 14px;
+            line-height: 16px;
+            padding: 5px 10px;
+            color: $bluedark;
+
+            &:hover {
+              color: $bluelittle;
+            }
+
+            @media only screen and (min-width: 60em) {
+              font-size: 16px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .copy {
+      p {
+        margin: 20px 0;
+        font-size: 14px;
+        line-height: 16px;
+        color: $bluedark;
+        text-align: center;
+
+        @media only screen and (min-width: 45em) {
+          text-align: right;
+        }
+
+        @media only screen and (min-width: 60em) {
+          font-size: 16px;
+          line-height: 18px;
         }
       }
     }

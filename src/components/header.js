@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Layout = () => (
+const Header = () => (
     <header>
         <div className={"top-menu"}>
             <div className={"container"}>
@@ -29,4 +29,4 @@ const Layout = () => (
     </header>
 )
 
-export default Layout
+export default Header

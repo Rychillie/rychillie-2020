@@ -37,28 +37,28 @@ export default () => {
                         <div className={"social"}>
                             <ul className={"social-list"}>
                                 <li className={"social-item"}>
-                                    <Link className={"twitter"} alt={"twitter"}>
+                                    <a href="https://www.twitter.com/rychillie/" target="_blank" rel="noopener noreferrer" className={"twitter"} alt={"twitter"}>
                                         <FeatherIcon name="twitter" alt={"twitter"}/>
                                         <p>@rychillie</p>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className={"social-item"}>
-                                    <Link className={"instagram"} alt={"instagram"}>
+                                    <a href="https://www.instagram.com/rychillie/" target="_blank" rel="noopener noreferrer" className={"instagram"} alt={"instagram"}>
                                         <FeatherIcon name="instagram" alt={"instagram"}/>
                                         <p>@rychillie</p>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className={"social-item"}>
-                                    <Link className={"youtube"} alt={"youtube"}>
+                                    <a href="https://www.youtube.com/rychillie/" target="_blank" rel="noopener noreferrer" className={"youtube"} alt={"youtube"}>
                                         <FeatherIcon name="youtube" />
                                         <p>/rychillie</p>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li className={"social-item"}>
-                                    <Link className={"github"} alt={"github"}>
+                                    <a href="https://www.github.com/rychillie/" target="_blank" rel="noopener noreferrer" className={"github"} alt={"github"}>
                                         <FeatherIcon name="github" alt={"github"}/>
                                         <p>/rychillie</p>
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>

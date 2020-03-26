@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import {StaticQuery, graphql} from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import Apresentation from "./apresentation"
 
 const Home = ({children}) => (
@@ -21,6 +22,7 @@ const Home = ({children}) => (
             <main className={"home"}>
               <div className={"container"}>{children}</div>
             </main>
+            <Footer/>
         </>
     )}/>
 )
