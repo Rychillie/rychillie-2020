@@ -25,8 +25,8 @@ const IndexPage = ({data}) => {
               </div>
               <div className={"col-7 details"}>
                 <h3 className={"titlepost"}>{node.frontmatter.title}</h3>
-                <p className={"description"}>{node.frontmatter.description}</p>
                 <span className={"categorypost"}>{node.frontmatter.categories}</span>
+                <span className={"separator"}>●</span>
                 <span className={"datepost"}>{node.frontmatter.date}</span>
               </div>
             </div>
@@ -54,7 +54,7 @@ export const pageQuery = graphql`{
               }
             }
           }
-          date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+          date(locale: "pt-br", formatString: "DD MMM")
           description
         }
         fields {

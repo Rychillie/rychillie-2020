@@ -394,40 +394,26 @@ main {
 
           .details {
             h3.titlepost {
-              font-size: 24px;
-              line-height: 26px;
-              margin-bottom: 10px;
+              font-size: 20px;
+              line-height: 24px;
+              margin-bottom: 5px;
               position: relative;
               display: block;
               color: $black;
               margin-top: 5px;
-              padding: 0;
 
               @media only screen and (min-width: 45em) {
-                margin-bottom: 5px;
-                min-height: 40px;
-                font-size: 18px;
-                line-height: 22px;
-              }
-            }
-
-            p.description {
-              font-size: 16px;
-              line-height: 18px;
-              margin-bottom: 10px;
-              position: relative;
-              display: block;
-              margin-top: 5px;
-              color: $bluedark;
-
-              @media only screen and (min-width: 45em) {
-                margin-bottom: 5px;
+                font-size: 22px;
+                line-height: 24px;
+                padding: 5px 10px;
                 margin-top: 5px;
-                min-height: 36px;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
+                margin-bottom: 10px;
+              }
+
+              @media only screen and (min-width: 60em) {
+                font-size: 24px;
+                line-height: 26px;
+                margin-top: 15px;
               }
             }
 
@@ -438,13 +424,27 @@ main {
               position: relative;
               display: block;
               margin-top: 5px;
+              display: inline-block;
+              color: $bluedark;
 
-              &.categorypost {
-                float: left;
+              &.separator {
+                margin-left: 5px;
+                margin-right: 5px;
+                color: $bluedark;
+                opacity: .3;
               }
 
-              &.datepost {
-                float: right;
+              @media only screen and (min-width: 45em) {
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                &.categorypost {
+                  padding-left: 10px;
+                }
+
+                &.datepost {
+                  padding-right: 10px;
+                }
               }
             }
           }
