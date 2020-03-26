@@ -240,111 +240,111 @@ header {
       }
     }
   }
+}
 
-  .social {
-    margin-top: 20px;
+.social {
+  margin-top: 20px;
+  position: relative;
+  display: block;
+
+  ul.social-list {
+    display: flex;
     position: relative;
-    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-    ul.social-list {
-      display: flex;
+    li.social-item {
+      float: left;
+      margin: 6px 5px;
       position: relative;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+      display: block;
+      clear:both;
 
-      li.social-item {
-        float: left;
-        margin: 6px 5px;
-        position: relative;
+      a {
         display: block;
-        clear:both;
+        position: relative;
+        padding: .65rem .8rem;
+        min-width: 75px;
+        text-align: center;
+        @include border-radius(.5rem);
+        @include transition(all .2s ease-in-out);
+        @include box-shadow(0 0px 5px 0px rgba(0, 0, 0, 0.08), 0 5px 2px 0px rgba(0, 0, 0, 0.02));
 
-        a {
-          display: block;
-          position: relative;
-          padding: .65rem .8rem;
-          min-width: 75px;
-          text-align: center;
-          @include border-radius(.5rem);
-          @include transition(all .2s ease-in-out);
-          @include box-shadow(0 0px 5px 0px rgba(0, 0, 0, 0.08), 0 5px 2px 0px rgba(0, 0, 0, 0.02));
+        &:hover {
+          @include box-shadow(0 0px 10px 0px rgba(0, 0, 0, 0.1), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
+        }
 
-          &:hover {
-            @include box-shadow(0 0px 10px 0px rgba(0, 0, 0, 0.1), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
-          }
-
-          @media only screen and (min-width: 45em) {
-            min-width: 120px;
-
-            svg {
-              line-height: 24px;
-              height: 24px;
-              width: 24px;
-            }
-
-            p {
-              line-height: 24px;
-              font-size: 16px;
-            }
-          }
+        @media only screen and (min-width: 45em) {
+          min-width: 120px;
 
           svg {
-            color: transparent;
-            border: 0 solid $white;
-            vertical-align: bottom;
-            display: inline-block;
-            margin-right: 3px;
-            line-height: 20px;
-            height: 20px;
-            width: 20px;
+            line-height: 24px;
+            height: 24px;
+            width: 24px;
           }
 
           p {
-            vertical-align: bottom;
-            display: inline-block;
-            line-height: 20px;
-            font-size: 12px;
+            line-height: 24px;
+            font-size: 16px;
           }
+        }
 
-          &.twitter {
-            background: rgba($color: $twitterblue, $alpha: 0.1);
-            color: $twitterblue;
+        svg {
+          color: transparent;
+          border: 0 solid $white;
+          vertical-align: bottom;
+          display: inline-block;
+          margin-right: 3px;
+          line-height: 20px;
+          height: 20px;
+          width: 20px;
+        }
 
-            svg {
-              fill: $twitterblue;
-              color: transparent;
-            }
+        p {
+          vertical-align: bottom;
+          display: inline-block;
+          line-height: 20px;
+          font-size: 12px;
+        }
+
+        &.twitter {
+          background: rgba($color: $twitterblue, $alpha: 0.1);
+          color: $twitterblue;
+
+          svg {
+            fill: $twitterblue;
+            color: transparent;
           }
+        }
 
-          &.instagram {
-            background: rgba($color: $black, $alpha: 0.1);
+        &.instagram {
+          background: rgba($color: $black, $alpha: 0.1);
+          color: $black;
+
+          svg {
+            fill: transparent;
             color: $black;
-
-            svg {
-              fill: transparent;
-              color: $black;
-            }
           }
+        }
 
-          &.github {
-            background: rgba($color: $black, $alpha: 0.1);
+        &.github {
+          background: rgba($color: $black, $alpha: 0.1);
+          color: $black;
+
+          svg {
+            fill: transparent;
             color: $black;
-
-            svg {
-              fill: transparent;
-              color: $black;
-            }
           }
+        }
 
-          &.youtube {
-            background: rgba($color: $red, $alpha: 0.1);
+        &.youtube {
+          background: rgba($color: $red, $alpha: 0.1);
+          color: $youtubered;
+
+          svg {
+            fill: transparent;
             color: $youtubered;
-
-            svg {
-              fill: transparent;
-              color: $youtubered;
-            }
           }
         }
       }
@@ -461,6 +461,35 @@ main {
           }
         }
       }
+    }
+  }
+
+  .about {
+    .gatsby-image-wrapper {
+      padding-top: 60%;
+      max-width: 60%;
+      margin: 0 auto;
+      @include border-radius(.65rem);
+      @include box-shadow(0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 1px 5px -2px rgba(0, 0, 0, 0.1));
+
+      @media only screen and (min-width: 45em) {
+        padding-top: 100%;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    .apresentation {
+      .bio {
+        p {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .social {
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 
@@ -608,6 +637,94 @@ footer {
         @media only screen and (min-width: 60em) {
           font-size: 16px;
         }
+      }
+    }
+  }
+}
+
+form {
+  &.formcontato {
+    width: 100%;
+    display: block;
+    position: relative;
+
+    .details {
+      width: 100%;
+      display: block;
+      position: relative;
+
+      .name, .email {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        border: 0;
+        color: $bluedark;
+        background: $white;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 100%;
+        min-height: 30px;
+        padding: 10px 15px;
+        @include box-sizing(border-box);
+
+        @media only screen and (min-width: 45em) {
+          width: 48%;
+        }
+      }
+
+      @media only screen and (min-width: 45em) {
+        .name {
+          margin-right: 2%;
+        }
+
+        .email {
+          margin-left: 2%;
+        }
+      }
+    }
+
+    .textarea {
+      textarea {
+        border: 0;
+        color: $bluedark;
+        background: $white;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 180px;
+        padding: 20px 15px;
+        @include box-sizing(border-box);
+      }
+    }
+
+    button.enviar {
+      width: 130px;
+      height: 40px;
+      color: $white;
+      display: block;
+      margin: 20px auto 30px;
+      background: $bluedark;
+      text-align: center;
+      padding: 10px 20px;
+      line-height: 20px;
+      font-size: 14px;
+      opacity: 1;
+      position: relative;
+      @include border-radius(5px);
+      @include transition(all .3s ease-in-out);
+      @include box-sizing(border-box);
+
+      &:hover {
+        opacity: .8;
+      }
+
+      @media only screen and (min-width: 45em) {
+        margin: 20px 0 30px auto;
       }
     }
   }
