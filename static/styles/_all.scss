@@ -434,9 +434,20 @@ main {
                 opacity: .3;
               }
 
+              &.description {
+                color: $bluedark;
+                font-size: 16px;
+                line-height: 18px;
+              }
+
               @media only screen and (min-width: 45em) {
                 padding-top: 5px;
                 padding-bottom: 5px;
+
+                &.description {
+                  padding-left: 10px;
+                  padding-right: 10px;
+                }
 
                 &.categorypost {
                   padding-left: 10px;
@@ -541,12 +552,14 @@ main {
 
 footer {
   padding: 40px 0;
+  background: $white;
 
   nav {
     .menu-footer {
       ul {
         margin: 20px 0;
         display: inline-flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -558,8 +571,7 @@ footer {
 
         li {
           position: relative;
-          margin-left: 5px;
-          margin-right: 5px;
+          margin: 10px 5px;
 
           a {
             font-size: 14px;
@@ -583,18 +595,18 @@ footer {
     .copy {
       p {
         margin: 20px 0;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 16px;
         color: $bluedark;
         text-align: center;
 
         @media only screen and (min-width: 45em) {
           text-align: right;
+          line-height: 38px;
         }
 
         @media only screen and (min-width: 60em) {
           font-size: 16px;
-          line-height: 18px;
         }
       }
     }

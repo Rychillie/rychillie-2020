@@ -13,9 +13,6 @@ const Header = () => (
                     <div className={"col-7 col-8-lm menu-list"}>
                         <ul>
                             <li>
-                                <Link to="/blog" title={"Blog"}>Blog</Link>
-                            </li>
-                            <li>
                                 <Link to="/portfolio" title={"Portfolio"}>Portfolio</Link>
                             </li>
                             <li>

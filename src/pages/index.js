@@ -33,7 +33,7 @@ const IndexPage = ({data}) => {
           </Link>
         ))}
       </div>
-      <Link className={"btn ver-artigos"} to={"Artigos"}>Todos Artigos</Link>
+      <Link className={"btn ver-artigos"} to={"artigos"}>Todos Artigos</Link>
     </Layout>
   )
 }
