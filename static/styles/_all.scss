@@ -267,6 +267,7 @@ header {
         padding: .65rem .8rem;
         min-width: 75px;
         text-align: center;
+        align-items: center;
         @include border-radius(.5rem);
         @include transition(all .2s ease-in-out);
         @include box-shadow(0 0px 5px 0px rgba(0, 0, 0, 0.08), 0 5px 2px 0px rgba(0, 0, 0, 0.02));
@@ -350,6 +351,26 @@ header {
           svg {
             fill: transparent;
             color: $youtubered;
+          }
+        }
+
+        &.linkedin {
+          background: rgba($color: $linkedinblue, $alpha: 0.1);
+          color: $linkedinblue;
+
+          svg {
+            fill: transparent;
+            color: $linkedinblue;
+          }
+        }
+
+        &.telegram {
+          background: rgba($color: $telegramblue, $alpha: 0.1);
+          color: $telegramblue;
+
+          svg {
+            fill: transparent;
+            color: $telegramblue;
           }
         }
       }

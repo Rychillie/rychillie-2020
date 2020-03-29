@@ -49,20 +49,32 @@ const SobrePage = () => {
                           </a>
                       </li>
                       <li className={"social-item"}>
-                          <a href="https://www.instagram.com/rychillie/" target="_blank" rel="noopener noreferrer" className={"instagram"} alt={"instagram"}>
-                              <FeatherIcon name="instagram" alt={"instagram"}/>
-                              <p>@rychillie</p>
-                          </a>
-                      </li>
-                      <li className={"social-item"}>
                           <a href="https://www.youtube.com/rychillie/" target="_blank" rel="noopener noreferrer" className={"youtube"} alt={"youtube"}>
                               <FeatherIcon name="youtube" />
                               <p>/rychillie</p>
                           </a>
                       </li>
                       <li className={"social-item"}>
+                          <a href="https://t.me/rychiii" target="_blank" rel="noopener noreferrer" className={"telegram"} alt={"telegram"}>
+                              <FeatherIcon name="send" alt={"telegram"}/>
+                              <p>@rychiii</p>
+                          </a>
+                      </li>
+                      <li className={"social-item"}>
                           <a href="https://www.github.com/rychillie/" target="_blank" rel="noopener noreferrer" className={"github"} alt={"github"}>
                               <FeatherIcon name="github" alt={"github"}/>
+                              <p>/rychillie</p>
+                          </a>
+                      </li>
+                      <li className={"social-item"}>
+                          <a href="https://www.instagram.com/rychillie/" target="_blank" rel="noopener noreferrer" className={"instagram"} alt={"instagram"}>
+                              <FeatherIcon name="instagram" alt={"instagram"}/>
+                              <p>@rychillie</p>
+                          </a>
+                      </li>
+                      <li className={"social-item"}>
+                          <a href="https://www.linkedin.com/in/rychillie/" target="_blank" rel="noopener noreferrer" className={"linkedin"} alt={"linkedin"}>
+                              <FeatherIcon name="linkedin" alt={"linkedin"}/>
                               <p>/rychillie</p>
                           </a>
                       </li>
