@@ -126,7 +126,7 @@ header {
                 padding: 10px 15px;
               }
 
-              &:hover, &:active, &.active {
+              &:hover, &:active, &.active,&[aria-current="page"] {
                 color: $red;
               }
             }
