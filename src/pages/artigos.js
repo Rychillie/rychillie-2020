@@ -24,10 +24,10 @@ const PageArtigos = ({data}) => {
                 </div>
               </div>
               <div className={"col-7 details"}>
-                <h3 className={"titlepost"}>{node.frontmatter.title}</h3>
                 <span className={"categorypost"}>{node.frontmatter.categories}</span>
                 <span className={"separator"}>●</span>
                 <span className={"datepost"}>{node.frontmatter.date}</span>
+                <h3 className={"titlepost"}>{node.frontmatter.title}</h3>
               </div>
             </div>
           </Link>
@@ -53,7 +53,7 @@ export const pageQuery = graphql`{
               }
             }
           }
-          date(locale: "pt-br", formatString: "DD MMM")
+          date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
           description
         }
         fields {

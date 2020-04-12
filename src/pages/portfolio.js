@@ -13,7 +13,7 @@ const Portfolio = ({data}) => {
       <h3>Meu Portfolio:</h3>
       <div className={"post-list"}>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Link className={"post"} type={node.frontmatter.categories} key={node.id} to={node.fields.slug} title={node.frontmatter.title}>
+          <Link className={"post"} type={"portfolio"} key={node.id} to={node.fields.slug} title={node.frontmatter.title}>
             <div className={"row content"}>
               <div className={"col-5 imgpost"}>
                 <div className={"imagepost"}>

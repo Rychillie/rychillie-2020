@@ -8,6 +8,7 @@ body, html {
 
   a {
     color: $dark;
+    @include transition(all .3s ease-in-out);
 
     &:hover, &:active {
       color: $bluedark;
@@ -227,7 +228,7 @@ header {
           display: block;
           bottom: 2px;
           left: 0px;
-          @include transition(all .2s ease-in-out);
+          @include transition(all .3s ease-in-out);
         }
 
         &:hover {
@@ -404,7 +405,30 @@ main {
           margin-bottom: 0;
         }
 
+        &[type="portfolio"] {
+          .details {
+            padding: 0;
+
+            @media only screen and (min-width: 45em) {
+              padding: 8px 0;
+            }
+
+            @media only screen and (min-width: 60em) {
+              padding: 15px 0;
+            }
+          }
+        }
+
         .content {
+          &:hover {
+            .imgpost {
+              .gatsby-image-wrapper {
+                @include box-shadow(0 3px 10px -3px rgba(0, 0, 0, 0.3), 0 1px 5px -2px rgba(0, 0, 0, 0.19));
+                @include transform(scale(1.03));
+              }
+            }
+          }
+
           .imgpost {
             .gatsby-image-wrapper {
               @include transition(.6s cubic-bezier(.2,.88,.54,1.21));
@@ -432,24 +456,29 @@ main {
                 font-size: 22px;
                 line-height: 24px;
                 padding: 5px 10px;
-                margin-top: 5px;
+                margin-top: 0px;
                 margin-bottom: 10px;
               }
 
               @media only screen and (min-width: 60em) {
                 font-size: 24px;
                 line-height: 26px;
-                margin-top: 15px;
+                margin-top: 0px;
+              }
+
+              +span {
+                margin-top: 0px;
+                padding-top: 0px;
               }
             }
 
             span {
               font-size: 15px;
               line-height: 16px;
-              margin-bottom: 10px;
+              margin-bottom: 5px;
               position: relative;
               display: block;
-              margin-top: 5px;
+              margin-top: 12px;
               display: inline-block;
               color: $bluedark;
 
@@ -467,7 +496,7 @@ main {
               }
 
               @media only screen and (min-width: 45em) {
-                padding-top: 5px;
+                padding-top: 12px;
                 padding-bottom: 5px;
 
                 &.description {
@@ -576,6 +605,7 @@ main {
         font-family: $nunito;
         color: $dark;
         z-index: 5;
+        @include transition(all .3s ease-in-out);
 
         &::before {
           content: "";
@@ -588,7 +618,7 @@ main {
           display: block;
           bottom: 2px;
           left: 0px;
-          @include transition(all .2s ease-in-out);
+          @include transition(all .3s ease-in-out);
         }
 
         &:hover {
@@ -633,6 +663,7 @@ footer {
             line-height: 16px;
             padding: 5px 10px;
             color: $bluedark;
+            @include transition(all .3s ease-in-out);
 
             &:hover {
               color: $bluelittle;
