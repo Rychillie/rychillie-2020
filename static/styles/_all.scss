@@ -1,27 +1,27 @@
 body, html {
   font-family: $nunito;
-  background-color: $white;
+  background-color: $Nord06;
   margin: 0;
   width: 100%;
   height: 100%;
   padding: 0;
 
   a {
-    color: $dark;
+    color: $Nord00;
     @include transition(all .3s ease-in-out);
 
     &:hover, &:active {
-      color: $bluedark;
+      color: $Nord00;
     }
 
     &.btn {
       &.ver-artigos {
         width: 130px;
         height: 40px;
-        color: $white;
+        color: $Nord06;
         display: block;
         margin: 50px auto 20px;
-        background: $bluedark;
+        background: $Nord00;
         text-align: center;
         padding: 10px 20px;
         line-height: 20px;
@@ -47,7 +47,7 @@ header {
     right: 0;
     position: fixed;
     z-index: 999;
-    background-color: hsla(0, 0%, 97%, 0.8);
+    background-color: hsla(218, 27%, 94%, 0.8);
     @include backdrop-filter(blur(10px));
 
     nav {
@@ -59,7 +59,7 @@ header {
         position: relative;
 
         h1 {
-          color: $bluedark;
+          color: $Nord00;
           font-family: $nunito;
           display: inline-block;
           visibility: visible;
@@ -110,7 +110,7 @@ header {
               display: block;
               padding: 5px;
               font-family: $nunito;
-              color: $bluelittle;
+              color: $Nord03;
               font-weight: 700;
               line-height: 22px;
               font-size: 16px;
@@ -127,7 +127,7 @@ header {
               }
 
               &:hover, &:active, &.active,&[aria-current="page"] {
-                color: $red;
+                color: $Nord11;
               }
             }
           }
@@ -178,7 +178,7 @@ header {
     h2 {
       margin: 0;
       padding: 0;
-      color: $bluedark;
+      color: $Nord00;
       font-size: 28px;
       line-height: 32px;
       margin-bottom: 20px;
@@ -190,7 +190,7 @@ header {
 
       small {
         margin: 0;
-        color: $bluelittle;
+        color: $Nord03;
         font-family: $nunito;
         position: relative;
         font-weight: 700;
@@ -204,7 +204,7 @@ header {
     p {
       font-size: 20px;
       line-height: 26px;
-      color: $bluedark;
+      color: $Nord00;
       position: relative;
       display: inline-block;
       font-family: $nunito;
@@ -223,7 +223,7 @@ header {
           height: 2px;
           opacity: 4;
           position: absolute;
-          background-color: $red;
+          background-color: $Nord11;
           z-index: -1;
           display: block;
           bottom: 2px;
@@ -234,7 +234,7 @@ header {
         &:hover {
           &::before {
             height: 13px;
-            background-color: $red;
+            background-color: $Nord11;
             opacity: .3;
           }
         }
@@ -294,7 +294,7 @@ header {
 
         svg {
           color: transparent;
-          border: 0 solid $white;
+          border: 0 solid $Nord06;
           vertical-align: bottom;
           display: inline-block;
           margin-right: 3px;
@@ -321,8 +321,8 @@ header {
         }
 
         &.instagram {
-          //background: rgba($color: $black, $alpha: 0.1);
-          color: $black;
+          //background: rgba($color: $dark, $alpha: 0.1);
+          color: $dark;
           background: rgba(240, 148, 51, 0.3);
           background: -moz-linear-gradient(45deg, rgba(240, 149, 51, 0.3) 0%, rgba(230, 105, 60, 0.3) 25%, rgba(220, 39, 66, 0.3) 50%, rgba(204, 35, 103, 0.3) 75%, rgba(188, 24, 136, 0.3) 100%);
           background: -webkit-linear-gradient(45deg, rgba(240, 149, 51, 0.3) 0%,rgba(230, 105, 60, 0.3) 25%,rgba(220, 39, 66, 0.3) 50%,rgba(204, 35, 103, 0.3) 75%,rgba(188, 24, 136, 0.3) 100%);
@@ -331,22 +331,22 @@ header {
 
           svg {
             fill: transparent;
-            color: $black;
+            color: $dark;
           }
         }
 
         &.github {
-          background: rgba($color: $black, $alpha: 0.1);
-          color: $black;
+          background: rgba($color: $dark, $alpha: 0.1);
+          color: $dark;
 
           svg {
             fill: transparent;
-            color: $black;
+            color: $dark;
           }
         }
 
         &.youtube {
-          background: rgba($color: $red, $alpha: 0.1);
+          background: rgba($color: $redprimary, $alpha: 0.1);
           color: $youtubered;
 
           svg {
@@ -382,7 +382,7 @@ header {
 main {
   margin-top: 100px;
   padding: 40px 0;
-  background-color: $light;
+  background-color: $Nord04;
 
   &.home {
     margin-top: 0;
@@ -449,7 +449,7 @@ main {
               margin-bottom: 5px;
               position: relative;
               display: block;
-              color: $black;
+              color: $Nord00;
               margin-top: 5px;
 
               @media only screen and (min-width: 45em) {
@@ -480,17 +480,17 @@ main {
               display: block;
               margin-top: 12px;
               display: inline-block;
-              color: $bluedark;
+              color: $Nord00;
 
               &.separator {
                 margin-left: 5px;
                 margin-right: 5px;
-                color: $bluedark;
+                color: $Nord00;
                 opacity: .3;
               }
 
               &.description {
-                color: $bluedark;
+                color: $Nord00;
                 font-size: 16px;
                 line-height: 18px;
               }
@@ -603,7 +603,7 @@ main {
         position: relative;
         display: inline-block;
         font-family: $nunito;
-        color: $dark;
+        color: $Nord00;
         z-index: 5;
         @include transition(all .3s ease-in-out);
 
@@ -613,7 +613,7 @@ main {
           height: 2px;
           opacity: 4;
           position: absolute;
-          background-color: $red;
+          background-color: $Nord11;
           z-index: -1;
           display: block;
           bottom: 2px;
@@ -622,11 +622,11 @@ main {
         }
 
         &:hover {
-          color: $dark;
+          color: $Nord00;
 
           &::before {
             height: 13px;
-            background-color: $red;
+            background-color: $Nord11;
             opacity: .3;
           }
         }
@@ -637,7 +637,7 @@ main {
 
 footer {
   padding: 40px 0;
-  background: $white;
+  background: $Nord06;
 
   nav {
     .menu-footer {
@@ -662,11 +662,11 @@ footer {
             font-size: 14px;
             line-height: 16px;
             padding: 5px 10px;
-            color: $bluedark;
+            color: $Nord00;
             @include transition(all .3s ease-in-out);
 
             &:hover {
-              color: $bluelittle;
+              color: $Nord03;
             }
 
             @media only screen and (min-width: 60em) {
@@ -683,7 +683,7 @@ footer {
         margin: 20px 0;
         font-size: 16px;
         line-height: 16px;
-        color: $bluedark;
+        color: $Nord00;
         text-align: center;
 
         @media only screen and (min-width: 45em) {
@@ -717,8 +717,8 @@ form {
         margin-bottom: 10px;
         width: 100%;
         border: 0;
-        color: $bluedark;
-        background: $white;
+        color: $Nord00;
+        background: $Nord06;
         font-size: 16px;
         line-height: 20px;
         max-width: 100%;
@@ -745,8 +745,8 @@ form {
     .textarea {
       textarea {
         border: 0;
-        color: $bluedark;
-        background: $white;
+        color: $Nord00;
+        background: $Nord06;
         display: block;
         width: 100%;
         font-size: 16px;
@@ -762,10 +762,10 @@ form {
     button.enviar {
       width: 130px;
       height: 40px;
-      color: $white;
+      color: $Nord06;
       display: block;
       margin: 20px auto 30px;
-      background: $bluedark;
+      background: $Nord00;
       text-align: center;
       padding: 10px 20px;
       line-height: 20px;

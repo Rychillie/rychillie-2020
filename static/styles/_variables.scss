@@ -6,19 +6,41 @@ $nunito: 'Nunito', sans-serif;
 
 $break-small: 719px;
 
-// Colors
-$white:             #F8F8F8;
-$light:             #E2E8F0;
-$black:             #191919;
-$dark:              #232323;
-$graylight:         #8d8d8d;
-$red:               #FF5757;
-$bluelittle:        #5e7392;
-$bluedark:          #2D3748;
+//  COLORS
+
+// Social Colors
+$dark:              #191919;
 $twitterblue:       #006aad;
+$redprimary:        #FF5757;
 $youtubered:        #d40000;
 $linkedinblue:      #0077B5;
 $telegramblue:      #0088CC;
+
+// Nord Colors
+//Polar Night
+$Nord00:             #2E3440;
+$Nord01:             #3B4252;
+$Nord02:             #434C5E;
+$Nord03:             #4C566A;
+
+//Snow Storm
+$Nord04:             #D8DEE9;
+$Nord05:             #E5E9F0;
+$Nord06:             #ECEFF4;
+
+//Frost
+$Nord07:             #8FBCBB;
+$Nord08:             #88C0D0;
+$Nord09:             #81A1C1;
+$Nord10:             #5E81AC;
+
+//Aurora
+$Nord11:             #BF616A;
+$Nord12:             #D08770;
+$Nord13:             #EBCB8B;
+$Nord14:             #A3BE8C;
+$Nord15:             #B48EAD;
+
 
 @mixin box-sizing($box-model) {
     -webkit-box-sizing: $box-model;
