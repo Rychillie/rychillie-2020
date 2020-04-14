@@ -10,11 +10,17 @@ $break-small: 719px;
 
 // Social Colors
 $dark:              #191919;
-$twitterblue:       #006aad;
-$redprimary:        #FF5757;
-$youtubered:        #d40000;
-$linkedinblue:      #0077B5;
-$telegramblue:      #0088CC;
+$light:             #ececec;
+$twitterbluelight:  #006aad;
+$twitterbluedark:   #7cccff;
+$redprimarylight:   #FF5757;
+$youtuberedlight:   #d40000;
+$redprimarydark:    #b90000;
+$youtubereddark:    #ff9090;
+$linkedinbluelight: #0077B5;
+$linkedinbluedark:  #4fc3ff;
+$telegrambluelight: #0088CC;
+$telegrambluedark:  #5cc9ff;
 
 // Nord Colors
 //Polar Night
@@ -41,6 +47,16 @@ $Nord13:             #EBCB8B;
 $Nord14:             #A3BE8C;
 $Nord15:             #B48EAD;
 
+$dark-mode: "(prefers-color-scheme: dark)";
+$light-mode: "(prefers-color-scheme: light)";
+$no-preference: "(prefers-color-scheme: no-preference)";
+
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
 
 @mixin box-sizing($box-model) {
     -webkit-box-sizing: $box-model;

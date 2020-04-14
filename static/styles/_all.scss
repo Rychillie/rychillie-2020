@@ -38,6 +38,63 @@ body, html {
       }
     }
   }
+
+  @media #{$dark-mode} {
+    background-color: $Nord00;
+
+    a {
+      color: $Nord06;
+
+      &:hover, &:active {
+        color: $Nord06;
+      }
+
+      &.btn {
+        &.ver-artigos {
+          color: $Nord00;
+          background: $Nord07;
+        }
+      }
+    }
+  }
+
+  @media #{$light-mode} {
+    background-color: $Nord06;
+
+    a {
+      color: $Nord00;
+
+      &:hover, &:active {
+        color: $Nord00;
+      }
+
+      &.btn {
+        &.ver-artigos {
+          color: $Nord06;
+          background: $Nord00;
+        }
+      }
+    }
+  }
+
+  @media #{$no-preference} {
+    background-color: $Nord06;
+
+    a {
+      color: $Nord00;
+
+      &:hover, &:active {
+        color: $Nord00;
+      }
+
+      &.btn {
+        &.ver-artigos {
+          color: $Nord06;
+          background: $Nord00;
+        }
+      }
+    }
+  }
 }
 
 header {
@@ -47,7 +104,7 @@ header {
     right: 0;
     position: fixed;
     z-index: 999;
-    background-color: hsla(218, 27%, 94%, 0.8);
+    background-color: rgba(236, 239, 244, 0.8);
     @include backdrop-filter(blur(10px));
 
     nav {
@@ -128,6 +185,88 @@ header {
 
               &:hover, &:active, &.active,&[aria-current="page"] {
                 color: $Nord11;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$dark-mode} {
+      background-color: #2e3440cc;
+
+      nav {
+        a {
+          h1 {
+            color: $Nord06;
+          }
+        }
+
+        .menu-list {
+          ul {
+            li {
+              a {
+                color: $Nord04;
+
+                &:hover, &:active, &.active,&[aria-current="page"] {
+                  color: $Nord11;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$light-mode} {
+      background-color: rgba(236, 239, 244, 0.8);
+
+      nav {
+        a {
+          h1 {
+            color: $Nord00;
+            font-family: $nunito;
+          }
+        }
+
+        .menu-list {
+          ul {
+            li {
+              a {
+                font-family: $nunito;
+                color: $Nord03;
+
+                &:hover, &:active, &.active,&[aria-current="page"] {
+                  color: $Nord11;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$no-preference} {
+      background-color: rgba(236, 239, 244, 0.8);
+
+      nav {
+        a {
+          h1 {
+            color: $Nord00;
+            font-family: $nunito;
+          }
+        }
+
+        .menu-list {
+          ul {
+            li {
+              a {
+                font-family: $nunito;
+                color: $Nord03;
+
+                &:hover, &:active, &.active,&[aria-current="page"] {
+                  color: $Nord11;
+                }
               }
             }
           }
@@ -240,6 +379,84 @@ header {
         }
       }
     }
+
+    @media #{$dark-mode} {
+      h2 {
+        color: $Nord06;
+
+        small {
+          color: $Nord04;
+        }
+      }
+
+      p {
+        color: $Nord06;
+
+        a {
+          &::before {
+            background-color: $Nord11;
+          }
+
+          &:hover {
+            &::before {
+              background-color: $Nord11;
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$light-mode} {
+      h2 {
+        color: $Nord00;
+
+        small {
+          color: $Nord03;
+        }
+      }
+
+      p {
+        color: $Nord00;
+
+        a {
+          &::before {
+            background-color: $Nord11;
+          }
+
+          &:hover {
+            &::before {
+              background-color: $Nord11;
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$no-preference} {
+      h2 {
+        color: $Nord00;
+
+        small {
+          color: $Nord03;
+        }
+      }
+
+      p {
+        color: $Nord00;
+
+        a {
+          &::before {
+            background-color: $Nord11;
+          }
+
+          &:hover {
+            &::before {
+              background-color: $Nord11;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -311,11 +528,11 @@ header {
         }
 
         &.twitter {
-          background: rgba($color: $twitterblue, $alpha: 0.1);
-          color: $twitterblue;
+          background: rgba($color: $twitterbluelight, $alpha: 0.1);
+          color: $twitterbluelight;
 
           svg {
-            fill: $twitterblue;
+            fill: $twitterbluelight;
             color: transparent;
           }
         }
@@ -346,32 +563,222 @@ header {
         }
 
         &.youtube {
-          background: rgba($color: $redprimary, $alpha: 0.1);
-          color: $youtubered;
+          background: rgba($color: $redprimarylight, $alpha: 0.1);
+          color: $youtuberedlight;
 
           svg {
             fill: transparent;
-            color: $youtubered;
+            color: $youtuberedlight;
           }
         }
 
         &.linkedin {
-          background: rgba($color: $linkedinblue, $alpha: 0.1);
-          color: $linkedinblue;
+          background: rgba($color: $linkedinbluelight, $alpha: 0.1);
+          color: $linkedinbluelight;
 
           svg {
             fill: transparent;
-            color: $linkedinblue;
+            color: $linkedinbluelight;
           }
         }
 
         &.telegram {
-          background: rgba($color: $telegramblue, $alpha: 0.1);
-          color: $telegramblue;
+          background: rgba($color: $telegrambluelight, $alpha: 0.1);
+          color: $telegrambluelight;
 
           svg {
             fill: transparent;
-            color: $telegramblue;
+            color: $telegrambluelight;
+          }
+        }
+
+        @media #{$dark-mode} {
+          @include box-shadow(0 0px 5px 0px rgba(80, 80, 80, 0.08), 0 5px 2px 0px rgba(80, 80, 80, 0.02));
+
+          &:hover {
+            @include box-shadow(0 0px 10px 0px rgba(80, 80, 80, 0.1), 0 5px 5px 0px rgba(80, 80, 80, 0.05));
+          }
+
+          svg {
+            border: 0 solid $Nord06;
+          }
+
+          &.twitter {
+            background: rgba($color: $twitterbluedark, $alpha: 0.1);
+            color: $twitterbluedark;
+
+            svg {
+              fill: $twitterbluedark;
+              color: transparent;
+            }
+          }
+
+          &.instagram {
+            color: $light;
+
+            svg {
+              color: $light;
+            }
+          }
+
+          &.github {
+            background: rgba($color: $light, $alpha: 0.1);
+            color: $light;
+
+            svg {
+              color: $light;
+            }
+          }
+
+          &.youtube {
+            background: rgba($color: $redprimarydark, $alpha: 0.1);
+            color: $youtubereddark;
+
+            svg {
+              color: $youtubereddark;
+            }
+          }
+
+          &.linkedin {
+            color: $linkedinbluedark;
+
+            svg {
+              color: $linkedinbluedark;
+            }
+          }
+
+          &.telegram {
+            color: $telegrambluedark;
+
+            svg {
+              color: $telegrambluedark;
+            }
+          }
+        }
+
+        @media #{$light-mode} {
+          @include box-shadow(0 0px 5px 0px rgba(0, 0, 0, 0.08), 0 5px 2px 0px rgba(0, 0, 0, 0.02));
+
+          &:hover {
+            @include box-shadow(0 0px 10px 0px rgba(0, 0, 0, 0.1), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
+          }
+
+          svg {
+            border: 0 solid $Nord06;
+          }
+
+          &.twitter {
+            background: rgba($color: $twitterbluelight, $alpha: 0.1);
+            color: $twitterbluelight;
+
+            svg {
+              fill: $twitterbluelight;
+              color: transparent;
+            }
+          }
+
+          &.instagram {
+            color: $dark;
+
+            svg {
+              color: $dark;
+            }
+          }
+
+          &.github {
+            background: rgba($color: $dark, $alpha: 0.1);
+            color: $dark;
+
+            svg {
+              color: $dark;
+            }
+          }
+
+          &.youtube {
+            color: $youtuberedlight;
+
+            svg {
+              color: $youtuberedlight;
+            }
+          }
+
+          &.linkedin {
+            color: $linkedinbluelight;
+
+            svg {
+              color: $linkedinbluelight;
+            }
+          }
+
+          &.telegram {
+            color: $telegrambluelight;
+
+            svg {
+              color: $telegrambluelight;
+            }
+          }
+        }
+
+        @media #{$no-preference} {
+          @include box-shadow(0 0px 5px 0px rgba(0, 0, 0, 0.08), 0 5px 2px 0px rgba(0, 0, 0, 0.02));
+
+          &:hover {
+            @include box-shadow(0 0px 10px 0px rgba(0, 0, 0, 0.1), 0 5px 5px 0px rgba(0, 0, 0, 0.05));
+          }
+
+          svg {
+            border: 0 solid $Nord06;
+          }
+
+          &.twitter {
+            background: rgba($color: $twitterbluelight, $alpha: 0.1);
+            color: $twitterbluelight;
+
+            svg {
+              fill: $twitterbluelight;
+              color: transparent;
+            }
+          }
+
+          &.instagram {
+            color: $dark;
+
+            svg {
+              color: $dark;
+            }
+          }
+
+          &.github {
+            background: rgba($color: $dark, $alpha: 0.1);
+            color: $dark;
+
+            svg {
+              color: $dark;
+            }
+          }
+
+          &.youtube {
+            color: $youtuberedlight;
+
+            svg {
+              color: $youtuberedlight;
+            }
+          }
+
+          &.linkedin {
+            color: $linkedinbluelight;
+
+            svg {
+              color: $linkedinbluelight;
+            }
+          }
+
+          &.telegram {
+            color: $telegrambluelight;
+
+            svg {
+              color: $telegrambluelight;
+            }
           }
         }
       }
@@ -386,6 +793,10 @@ main {
 
   &.home {
     margin-top: 0;
+  }
+
+  h3 {
+    color: $Nord00;
   }
 
   .post-list {
@@ -633,6 +1044,237 @@ main {
       }
     }
   }
+
+  @media #{$dark-mode} {
+    background-color: $Nord01;
+
+    h3 {
+      color: $Nord06;
+    }
+
+    .post-list {
+      a {
+        &.post {
+          .content {
+            &:hover {
+              .imgpost {
+                .gatsby-image-wrapper {
+                  @include box-shadow(0 3px 10px -3px rgba(80, 80, 80, 0.3), 0 1px 5px -2px rgba(80, 80, 80, 0.19));
+                }
+              }
+            }
+
+            .imgpost {
+              .gatsby-image-wrapper {
+                @include box-shadow(0 5px 10px -3px rgba(80, 80, 80, 0.2), 0 1px 5px -2px rgba(80, 80, 80, 0.1));
+
+                &:hover {
+                  @include box-shadow(0 3px 10px -3px rgba(80, 80, 80, 0.3), 0 1px 5px -2px rgba(80, 80, 80, 0.19));
+                }
+              }
+            }
+
+            .details {
+              h3.titlepost {
+                color: $Nord06;
+              }
+
+              span {
+                color: $Nord06;
+
+                &.separator {
+                  color: $Nord06;
+                }
+
+                &.description {
+                  color: $Nord06;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .about {
+      .gatsby-image-wrapper {
+        @include box-shadow(0 5px 10px -3px rgba(80, 80, 80, 0.2), 0 1px 5px -2px rgba(80, 80, 80, 0.1));
+      }
+    }
+
+    .blogpost {
+      .article {a {
+          color: $Nord06;
+
+          &::before {
+            background-color: $Nord11;
+          }
+
+          &:hover {
+            color: $Nord06;
+
+            &::before {
+              background-color: $Nord11;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$light-mode} {
+    background-color: $Nord04;
+
+    h3 {
+      color: $Nord00;
+    }
+
+    .post-list {
+      a {
+        &.post {
+          .content {
+            &:hover {
+              .imgpost {
+                .gatsby-image-wrapper {
+                  @include box-shadow(0 3px 10px -3px rgba(0, 0, 0, 0.3), 0 1px 5px -2px rgba(0, 0, 0, 0.19));
+                }
+              }
+            }
+
+            .imgpost {
+              .gatsby-image-wrapper {
+                @include box-shadow(0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 1px 5px -2px rgba(0, 0, 0, 0.1));
+
+                &:hover {
+                  @include box-shadow(0 3px 10px -3px rgba(0, 0, 0, 0.3), 0 1px 5px -2px rgba(0, 0, 0, 0.19));
+                }
+              }
+            }
+
+            .details {
+              h3.titlepost {
+                color: $Nord00;
+              }
+
+              span {
+                color: $Nord00;
+
+                &.separator {
+                  color: $Nord00;
+                }
+
+                &.description {
+                  color: $Nord00;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .about {
+      .gatsby-image-wrapper {
+        @include box-shadow(0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 1px 5px -2px rgba(0, 0, 0, 0.1));
+      }
+    }
+
+    .blogpost {
+      .article {a {
+          color: $Nord00;
+
+          &::before {
+            background-color: $Nord11;
+          }
+
+          &:hover {
+            color: $Nord00;
+
+            &::before {
+              background-color: $Nord11;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$no-preference} {
+    background-color: $Nord04;
+
+    h3 {
+      color: $Nord00;
+    }
+
+    .post-list {
+      a {
+        &.post {
+          .content {
+            &:hover {
+              .imgpost {
+                .gatsby-image-wrapper {
+                  @include box-shadow(0 3px 10px -3px rgba(0, 0, 0, 0.3), 0 1px 5px -2px rgba(0, 0, 0, 0.19));
+                }
+              }
+            }
+
+            .imgpost {
+              .gatsby-image-wrapper {
+                @include box-shadow(0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 1px 5px -2px rgba(0, 0, 0, 0.1));
+
+                &:hover {
+                  @include box-shadow(0 3px 10px -3px rgba(0, 0, 0, 0.3), 0 1px 5px -2px rgba(0, 0, 0, 0.19));
+                }
+              }
+            }
+
+            .details {
+              h3.titlepost {
+                color: $Nord00;
+              }
+
+              span {
+                color: $Nord00;
+
+                &.separator {
+                  color: $Nord00;
+                }
+
+                &.description {
+                  color: $Nord00;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .about {
+      .gatsby-image-wrapper {
+        @include box-shadow(0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 1px 5px -2px rgba(0, 0, 0, 0.1));
+      }
+    }
+
+    .blogpost {
+      .article {a {
+          color: $Nord00;
+
+          &::before {
+            background-color: $Nord11;
+          }
+
+          &:hover {
+            color: $Nord00;
+
+            &::before {
+              background-color: $Nord11;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 footer {
@@ -697,6 +1339,84 @@ footer {
       }
     }
   }
+
+  @media #{$dark-mode} {
+    background: $Nord00;
+
+    nav {
+      .menu-footer {
+        ul {
+          li {
+            a {
+              color: $Nord06;
+
+              &:hover {
+                color: $Nord04;
+              }
+            }
+          }
+        }
+      }
+
+      .copy {
+        p {
+          color: $Nord06;
+        }
+      }
+    }
+  }
+
+  @media #{$light-mode} {
+    background: $Nord06;
+
+    nav {
+      .menu-footer {
+        ul {
+          li {
+            a {
+              color: $Nord00;
+
+              &:hover {
+                color: $Nord03;
+              }
+            }
+          }
+        }
+      }
+
+      .copy {
+        p {
+          color: $Nord00;
+        }
+      }
+    }
+  }
+
+  @media #{$no-preference} {
+    background: $Nord06;
+
+    nav {
+      .menu-footer {
+        ul {
+          li {
+            a {
+              color: $Nord00;
+
+              &:hover {
+                color: $Nord03;
+              }
+            }
+          }
+        }
+      }
+
+      .copy {
+        p {
+          color: $Nord00;
+        }
+      }
+    }
+  }
 }
 
 form {
@@ -724,7 +1444,12 @@ form {
         max-width: 100%;
         min-height: 30px;
         padding: 10px 15px;
+        @include border-radius(6px);
         @include box-sizing(border-box);
+
+        @include placeholder {
+          color: $Nord00;
+        }
 
         @media only screen and (min-width: 45em) {
           width: 48%;
@@ -748,6 +1473,7 @@ form {
         color: $Nord00;
         background: $Nord06;
         display: block;
+        resize: none;
         width: 100%;
         font-size: 16px;
         line-height: 20px;
@@ -755,7 +1481,12 @@ form {
         max-width: 100%;
         min-height: 180px;
         padding: 20px 15px;
+        @include border-radius(6px);
         @include box-sizing(border-box);
+
+        @include placeholder {
+          color: $Nord00;
+        }
       }
     }
 
@@ -772,7 +1503,8 @@ form {
       font-size: 14px;
       opacity: 1;
       position: relative;
-      @include border-radius(5px);
+      border-color: transparent;
+      @include border-radius(6px);
       @include transition(all .3s ease-in-out);
       @include box-sizing(border-box);
 
@@ -782,6 +1514,83 @@ form {
 
       @media only screen and (min-width: 45em) {
         margin: 20px 0 30px auto;
+      }
+    }
+  }
+
+  @media #{$dark-mode} {
+    &.formcontato {
+      .details {
+        .name, .email {
+          color: $Nord06;
+          background: $Nord00;
+
+          @include placeholder {
+            color: $Nord06;
+          }
+        }
+      }
+
+      .textarea {
+        textarea {
+          color: $Nord06;
+          background: $Nord00;
+
+          @include placeholder {
+            color: $Nord06;
+          }
+        }
+      }
+
+      button.enviar {
+        color: $Nord00;
+        background: $Nord14;
+      }
+    }
+  }
+
+  @media #{$light-mode} {
+    &.formcontato {
+      .details {
+        .name, .email {
+          color: $Nord00;
+          background: $Nord06;
+        }
+      }
+
+      .textarea {
+        textarea {
+          color: $Nord00;
+          background: $Nord06;
+        }
+      }
+
+      button.enviar {
+        color: $Nord06;
+        background: $Nord00;
+      }
+    }
+  }
+
+  @media #{$no-preference} {
+    &.formcontato {
+      .details {
+        .name, .email {
+          color: $Nord00;
+          background: $Nord06;
+        }
+      }
+
+      .textarea {
+        textarea {
+          color: $Nord00;
+          background: $Nord06;
+        }
+      }
+
+      button.enviar {
+        color: $Nord06;
+        background: $Nord00;
       }
     }
   }
