@@ -978,11 +978,16 @@ main {
       display: block;
       position: relative;
       margin: 20px 0 15px;
+      color: $Nord00;
     }
 
     .article {
       display: block;
       position: relative;
+
+      h1, h2, h3, h4, h5, h6 {
+        color: $Nord00;
+      }
 
       p {
         display: block;
@@ -990,6 +995,7 @@ main {
         font-size: 20px;
         line-height: 26px;
         margin-bottom: 10px;
+        color: $Nord00;
       }
 
       img {
@@ -1103,7 +1109,21 @@ main {
     }
 
     .blogpost {
-      .article {a {
+
+      .categorydate {
+        color: $Nord06;
+      }
+
+      .article {
+        h1, h2, h3, h4, h5, h6 {
+          color: $Nord06;
+        }
+
+        p {
+          color: $Nord06;
+        }
+
+        a {
           color: $Nord06;
 
           &::before {
@@ -1180,7 +1200,20 @@ main {
     }
 
     .blogpost {
-      .article {a {
+      .categorydate {
+        color: $Nord00;
+      }
+
+      .article {
+        h1, h2, h3, h4, h5, h6 {
+          color: $Nord00;
+        }
+
+        p {
+          color: $Nord00;
+        }
+
+        a {
           color: $Nord00;
 
           &::before {
@@ -1257,7 +1290,20 @@ main {
     }
 
     .blogpost {
-      .article {a {
+      .categorydate {
+        color: $Nord00;
+      }
+
+      .article {
+        h1, h2, h3, h4, h5, h6 {
+          color: $Nord00;
+        }
+
+        p {
+          color: $Nord00;
+        }
+
+        a {
           color: $Nord00;
 
           &::before {
