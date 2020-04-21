@@ -28,11 +28,11 @@ categories:
 ---
 Não querendo me aparecer nem nada venho apresentar este que é meu cantinho de trabalho e estudo, com foco total em produtividade. Caso tenha interesse eu mostrei o meu setup através de um video no meu canal no Youtube.
 
-Começando pelo meu Monitor eu utilizo um LG 24BL550J que é um monitor de 24 polegadas e que pode ser ajustado tanto na altura quanto no seu angulo e ainda pode ser rotacionado 90 graus tanto para a direita quanto para a esquerda, ou seja, posso utiliza-lo tanto na horizontal quanto na vertialcal, no caso de eu trabalhar com dois monitores poderia deixar um na horizontal e outro na vertical, para trabalhar com programação isso é muito util pois facilita na hora de abrir uma folha de códigos extensa!\
-\
+Começando pelo meu Monitor eu utilizo um LG 24BL550J que é um monitor de 24 polegadas e que pode ser ajustado tanto na altura quanto no seu angulo e ainda pode ser rotacionado 90 graus tanto para a direita quanto para a esquerda, ou seja, posso utiliza-lo tanto na horizontal quanto na vertialcal, no caso de eu trabalhar com dois monitores poderia deixar um na horizontal e outro na vertical, para trabalhar com programação isso é muito util pois facilita na hora de abrir uma folha de códigos extensa!
+
 Compre este monitor na [Amazon Brasil](https://amzn.to/2z9nKNl)\
 Compre este monitor na [Americanas](https://fas.st/oCxrt)
 
-O meu notebook é um Macbook Pro de 13 Polegadas com Touchbar que utilizo para trabalho e estudo, comprei ele em uma ótima oportunidade que tive e com certeza ele me ajudou muito no meu trabalho como programador. Uma coisa devo pontuar que é o fato de que não é necessário ter um macbook para programar, um computador com windows ou linux tambem servira, até por que, isso depende muito de você!\
-\
+O meu notebook é um Macbook Pro de 13 Polegadas com Touchbar que utilizo para trabalho e estudo, comprei ele em uma ótima oportunidade que tive e com certeza ele me ajudou muito no meu trabalho como programador. Uma coisa devo pontuar que é o fato de que não é necessário ter um macbook para programar, um computador com windows ou linux tambem servira, até por que, isso depende muito de você!
+
 Logo em baixo do meu notebook temos um suporte da Nexstand
