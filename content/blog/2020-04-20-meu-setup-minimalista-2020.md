@@ -35,6 +35,6 @@ Compre este monitor na [Americanas](https://fas.st/oCxrt)
 
 O meu notebook é um Macbook Pro de 13 Polegadas com Touchbar que utilizo para trabalho e estudo, comprei ele em uma ótima oportunidade que tive e com certeza ele me ajudou muito no meu trabalho como programador. Uma coisa devo pontuar que é o fato de que não é necessário ter um macbook para programar, um computador com windows ou linux tambem servira, até por que, isso depende muito de você!
 
-Logo em baixo do meu notebook temos um suporte da Nexstand
+Logo em baixo do meu notebook temos um suporte da Nexstand, um suporte muito bacana que pode se fechar e ser facilmente transportado para qualquer lugar.
 
 Compre este suporte na [Aliexpress](https://ali.ski/LhtbS)
