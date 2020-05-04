@@ -36,6 +36,6 @@ Para criar este clone utilizamos o [React-Native](https://reactnative.dev/) com 
 
 ## 🧐 Como instalar o App?
 
-* Tendo em mente que você já tem instalado o [NPM](https://www.npmjs.com/) e o [Yarn](https://yarnpkg.com/) Primeiro faça um clone [deste projeto](https://github.com/Rychillie/PicPay-Clone/) ou faça o download.
-* Instale o [Expo-CLI](https://expo.io/tools) com o seguinte comando no seu terminal: `npm install expo-cli --global`;
-* Logo depois de finalizado a instalação realize o seguinte comando para executar o aplicativo: `yarn start`.
+- Tendo em mente que você já tem instalado o [NPM](https://www.npmjs.com/) e o [Yarn](https://yarnpkg.com/) Primeiro faça um clone [deste projeto](https://github.com/Rychillie/PicPay-Clone/) ou faça o download.
+- Instale o [Expo-CLI](https://expo.io/tools) com o seguinte comando no seu terminal: `npm install expo-cli --global`;
+- Logo depois de finalizado a instalação realize o seguinte comando para executar o aplicativo: `yarn start`.
