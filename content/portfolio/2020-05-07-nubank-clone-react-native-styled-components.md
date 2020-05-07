@@ -22,8 +22,6 @@ tags:
 categories:
   - portfolio
 ---
-![Screenshot](/images/nubank.png "Screenshot")
-
 ## 🚀 Apresentação
 
 Este projeto foi realizado em LiveStream, através da plataforma [Twitch.tv](https://twitch.tv) no [meu canal pessoal da Twitch.tv](https://twitch.tv/rychillie) como forma de treinamento e ensino para a comunidade brasileira de desenvolvimento.
