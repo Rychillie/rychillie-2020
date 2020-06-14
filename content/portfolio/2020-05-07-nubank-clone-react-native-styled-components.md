@@ -20,7 +20,7 @@ tags:
   - native
   - app
 categories:
-  - portfolio
+  - Portfolio
 ---
 ## 🚀 Apresentação
 
