@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://rychillie.net`,
     titleTemplate: "%s · Rychillie",
     url: "https://rychillie.net",
-    image: "/images/profile.jpg",
+    image: "/images/profile.png",
     twitterUsername: "@rychillie",
   },
   plugins: [
@@ -110,6 +110,6 @@ module.exports = {
         trackingId: "UA-45575876-4",
       },
     },
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
   ],
 }
