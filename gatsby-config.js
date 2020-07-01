@@ -110,6 +110,11 @@ module.exports = {
         trackingId: "UA-45575876-4",
       },
     },
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: false
+      },
+    },
   ],
 }
