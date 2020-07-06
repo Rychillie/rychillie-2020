@@ -205,7 +205,7 @@ const StyledLink = styled(Link)`
 export default () => {
     const data = useStaticQuery(graphql`
     query {
-        file(relativePath: { eq: "profile.png" }) {
+        file(relativePath: { eq: "profile.svg" }) {
             childImageSharp {
                 fluid(maxWidth: 250, quality: 100) {
                     ...GatsbyImageSharpFluid

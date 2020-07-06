@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://rychillie.net`,
     titleTemplate: "%s · Rychillie",
     url: "https://rychillie.net",
-    image: "/images/profile.png",
+    image: "/images/profile.svg",
     twitterUsername: "@rychillie",
   },
   plugins: [
