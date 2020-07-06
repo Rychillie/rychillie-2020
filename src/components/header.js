@@ -159,7 +159,9 @@ const Header = () => (
         <MenuTop>
             <Container>
                 <Nav>
-                    <Link to="/" title={"Rychillie"} className={"title"}><Title>R<Spn>ychillie</Spn></Title></Link>
+                    <Link to="/" title={"Rychillie"} className={"title"}>
+                        <Title>R<Spn>ychillie</Spn></Title>
+                    </Link>
                     <MenuList>
                         <ItemLista>
                             <ItemLink to="/portfolio" title={"Portfolio"}>Portfolio</ItemLink>
