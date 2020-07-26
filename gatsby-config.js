@@ -16,6 +16,7 @@ module.exports = {
         lang: 'pt-br'
       }
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -111,6 +112,5 @@ module.exports = {
         trackingId: "UA-45575876-4",
       },
     },
-    `gatsby-plugin-styled-components`,
   ],
 }
