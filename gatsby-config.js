@@ -118,6 +118,6 @@ module.exports = {
         icon: `${__dirname}/static/images/unicorn.png`,
       },
     },
-    `gatsby-plugin-offline`,
+    //`gatsby-plugin-offline`,
   ],
 }
