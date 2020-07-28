@@ -230,4 +230,4 @@ export const pageQuery = graphql`{
   }
 }
 `
-export default PageArtigos
+export default PageArtigos;

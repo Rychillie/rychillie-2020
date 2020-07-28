@@ -448,4 +448,4 @@ const Social = () => (
     </Sc>
 )
 
-export default Social
+export default Social;

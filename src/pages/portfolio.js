@@ -183,4 +183,4 @@ export const pageQuery = graphql`{
   }
 }
 `
-export default Portfolio
+export default Portfolio;

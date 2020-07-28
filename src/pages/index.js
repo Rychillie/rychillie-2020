@@ -232,4 +232,4 @@ export const pageQuery = graphql`{
 }
 `
 
-export default IndexPage
+export default IndexPage;

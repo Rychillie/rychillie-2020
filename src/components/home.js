@@ -268,4 +268,4 @@ Home.propTypes = {
     children: PropTypes.node.isRequired,
 }
 
-export default Home
+export default Home;

@@ -151,4 +151,4 @@ const Footer = () => (
     </Ft>
 )
 
-export default Footer
+export default Footer;

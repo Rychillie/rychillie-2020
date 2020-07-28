@@ -89,19 +89,6 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Rychillie`,
-        description: 'Brazilian Front-End Developer',
-        short_name: `Rychillie`,
-        start_url: `/`,
-        background_color: `#FF5757`,
-        theme_color: `#1A1A1A`,
-        display: `standalone`,
-        icon: `${__dirname}/static/images/unicorn.png`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
@@ -115,6 +102,20 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-45575876-4",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Rychillie`,
+        lang: `pt-br`,
+        description: 'Desenvolvedor FrontEnd',
+        short_name: `Rychillie`,
+        start_url: `/`,
+        background_color: `#2E3440`,
+        theme_color: `#2E3440`,
+        display: `standalone`,
+        icon: `${__dirname}/static/images/unicorn.png`,
       },
     },
     `gatsby-plugin-offline`,

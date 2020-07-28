@@ -17,8 +17,6 @@ const FeatherIcon = ({ name, color, size, ...restProps }) => (
   </svg>
 )
 
-export default FeatherIcon
-
 FeatherIcon.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string,
@@ -28,3 +26,5 @@ FeatherIcon.propTypes = {
 FeatherIcon.defaultProps = {
   color: 'currentColor',
 }
+
+export default FeatherIcon;

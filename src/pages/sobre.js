@@ -385,4 +385,4 @@ const SobrePage = () => {
 }
 
 
-export default SobrePage
+export default SobrePage;
