@@ -16,6 +16,7 @@ module.exports = {
         lang: 'pt-br'
       }
     },
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
